@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-import "styles/style.scss";
+import "@/styles/style.scss";
 
 import { Poppins } from 'next/font/google';
 import React from 'react';
