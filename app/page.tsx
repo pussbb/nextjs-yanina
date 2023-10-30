@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import YaninaInfoSection from '@/app/Sections/YaninaInfoSection';
+import GreenCheck from '@/app/components/GreenCheck';
 
 
 export default function Home() {
@@ -90,9 +91,18 @@ export default function Home() {
                             Цех курс для вас, якщо:
                         </h2>
                         <p className="mt-4 mb-2">
-                            Хочете щоб Ваша дитина виросла здоровою, кріпкоюб підтянутою, з хорошою координацією і легкою походкою?.<br/>
-                            Шукаєте єфективні вправи, щоб дитина забула про біль у ногах, не сильно втомлювалася і могла займатися з успіхом будь-якою активністі.<br/>
-                            Бажаєте привчити дитину займатися собою та створити фундамент здорового майбутнього <br/>
+                            <ul className='max-w-md space-y-1 text-gray-500 list-disc list-inside'>
+                                {
+                                    [
+                                        'Хочете щоб Ваша дитина виросла здоровою, кріпкоюб підтянутою, з хорошою координацією і легкою походкою.',
+                                        'Шукаєте єфективні вправи, щоб дитина забула про біль у ногах, не сильно втомлювалася і могла займатися з успіхом будь-якою активністі.',
+                                        'Бажаєте привчити дитину займатися собою та створити фундамент здорового майбутнього'
+                                    ].map((item, index) =>
+                                        (<li key={`yanina-infoindex-${index}`} className={'flex items-center'}><GreenCheck />{item}</li>)
+                                    )
+                                }
+                            </ul>
+
                         </p>
                             <Link
                                 href={''}
