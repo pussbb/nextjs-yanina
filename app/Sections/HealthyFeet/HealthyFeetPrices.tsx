@@ -81,7 +81,6 @@ const HealthyFeetPrices = () => {
                                         plan.recommended ? "btn-primary" : "btn-outline-primary"
                                     }`}
                                     href={plan.button.link}
-                                    rel={plan.button.rel}
                                 >
                                     {plan.button.label}
                                 </Link>
