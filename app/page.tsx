@@ -2,12 +2,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import YaninaInfoSection from '@/app/Sections/YaninaInfoSection';
 import GreenCheck from '@/app/components/GreenCheck';
+import HealthyFeetPrices from '@/app/Sections/HealthyFeet/HealthyFeetPrices';
+import HealthyFeetInfo from '@/app/Sections/HealthyFeet/HealthyFeetInfo';
 
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col justify-between p-1">
-
       <section className="section pb-[50px]">
         <div className="container">
           <div className="row text-center">
@@ -103,7 +104,7 @@ export default function Home() {
 
                         </p>
                             <Link
-                                href={''}
+                                href={'/order'}
                                 className="cta-link inline-flex items-center text-primary"
                             >
                                 Замовити
@@ -122,6 +123,9 @@ export default function Home() {
 
         <YaninaInfoSection />
 
+        <HealthyFeetPrices />
+
+        <HealthyFeetInfo />
     </main>
   )
 }

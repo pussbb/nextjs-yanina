@@ -17,7 +17,7 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
-    title: 'Yanina Popesko',
+    title: 'Яніна Попеско',
     description: 'Онлайн курс «Здорова стопа» для дітей 4-12 років Виправляємо вальгус і плоскостопість за 20 хвилин на день',
 }
 
