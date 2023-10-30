@@ -38,12 +38,12 @@ const Footer = () => {
                                 alt="website logo"
                             />
                         </Link>
-                        <Social source={social} className="social-icons mb-8" />
+                        <Social source={social} className="social-icons mt-4 mb-8" />
                     </div>
                 </div>
                 {/* copyright */}
                 <div className="border-t border-border py-6">
-                    Designed and Developed for Yanina Popesko
+                    Designed and Developed for Yanina Popesko. Copyright © { new Date().getFullYear() }
                 </div>
             </div>
         </footer>
