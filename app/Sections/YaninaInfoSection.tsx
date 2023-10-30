@@ -23,7 +23,7 @@ const YaninaInfoSection = () => {
                         className={`service-content mt-5 md:mt-0 md:order-2`}
                     >
                         <h2 className="font-bold leading-[40px]">
-                            Чому мені можно довіряти?
+                            Чому мені довіряють.
                         </h2>
                         <p className="mt-4 mb-2">
                             <ul className='max-w-md space-y-1 text-gray-500 list-disc list-inside'>
