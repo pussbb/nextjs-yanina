@@ -1,21 +1,19 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import GreenCheck from '@/app/components/GreenCheck';
 
 
 const HealthyFeetInfo = () => {
     return (
         <>
-            <section className={`section `}>
+            <section className={'section '}>
                 <div className="container">
                     <div className="items-center gap-8 md:grid md:grid-cols-2">
                         {/* Carousel */}
-                        <div className={`service-carousel md:order-2`}>
+                        <div className={'service-carousel md:order-2'}>
                             зображення
                         </div>
                         {/* Content */}
                         <div
-                            className={`service-content mt-5 md:mt-0 md:order-1`}
+                            className={'service-content mt-5 md:mt-0 md:order-1'}
                         >
                             <h2 className="font-bold leading-[40px]">
 
@@ -41,12 +39,12 @@ const HealthyFeetInfo = () => {
                 </div>
             </section>
 
-            <section className={`section `}>
+            <section className={'section '}>
                 <div className="container">
                     <div className="items-center gap-8">
                         {/* Content */}
                         <div
-                            className={`service-content mt-5 md:mt-0 md:order-1`}
+                            className={'service-content mt-5 md:mt-0 md:order-1'}
                         >
                             <h2 className="font-bold leading-[40px]">
                                 Протипоказання
@@ -59,16 +57,16 @@ const HealthyFeetInfo = () => {
                 </div>
             </section>
 
-            <section className={`section `}>
+            <section className={'section '}>
                 <div className="container">
                     <div className="items-center gap-8 md:grid md:grid-cols-2">
                         {/* Carousel */}
-                        <div className={`service-carousel md:order-2`}>
+                        <div className={'service-carousel md:order-2'}>
                             зображення
                         </div>
                         {/* Content */}
                         <div
-                            className={`service-content mt-5 md:mt-0 md:order-1`}
+                            className={'service-content mt-5 md:mt-0 md:order-1'}
                         >
                             <h2 className="font-bold leading-[40px]">
                                 Що треба для занять на курсі?
@@ -86,10 +84,10 @@ const HealthyFeetInfo = () => {
                 </div>
             </section>
 
-            <section className={`section `}>
+            <section className={'section '}>
                 <div className="container">
                     <div className="items-center gap-8">
-                        <div className={`service-content mt-5 md:mt-0 md:order-1`}>
+                        <div className={'service-content mt-5 md:mt-0 md:order-1'}>
                             <h4 className="font-bold leading-[40px]">
                                 Скільки разів на тиждень треба займатися?
                             </h4>
@@ -112,7 +110,8 @@ const HealthyFeetInfo = () => {
                             <p className="mt-4 mb-2">
                                 <ul className='max-w-md space-y-1 text-gray-500 list-disc list-inside'>
                                     <li>
-                                        Дитина активно росте і пластична. Закласти нові нейронні зв'язки та патерни руху у цьому віці набагато простіше!
+                                        Дитина активно росте і пластична. Закласти нові нейронні зв'язки та патерни руху
+                                        у цьому віці набагато простіше!
                                     </li>
                                     <li>
                                         Порушення ще не встигли зафіксуватись на кістковому рівні.
