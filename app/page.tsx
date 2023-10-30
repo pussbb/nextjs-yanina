@@ -6,7 +6,7 @@ import GreenCheck from '@/app/components/GreenCheck';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-8">
+    <main className="flex min-h-screen flex-col justify-between p-1">
 
       <section className="section pb-[50px]">
         <div className="container">
@@ -19,10 +19,7 @@ export default function Home() {
                 Виправляємо вальгус і плоскостопість за 20 хвилин на день.<br/>
                 Старт: 7 листопада.<br/>
               </p>
-                  <Link
-                      className="btn btn-primary mt-4"
-                      href={'/order'}
-                  >
+                  <Link className="btn btn-primary mt-4" href={'/order'}>
                     Замовити
                   </Link>
               <Image
@@ -46,7 +43,7 @@ export default function Home() {
                         Дітям від 4 до 12 років які мають:
                     </h2>
                 </div>
-                <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
                     {[
                         'плоскостопість 1-2 ступеня',
                         'вальгус 1-2 ступеня',
@@ -54,7 +51,8 @@ export default function Home() {
                         'ходьба на півпальцях',
                         'важка хода',
                         'шльопаюча хода',
-                        'скаржиться на біль у ногах, швидко втомлюється після довгих прогулянок, незграбний'
+                        'скаржиться на біль у ногах',
+                        'швидко втомлюється після довгих прогулянок, незграбний'
                     ].map((item, i) => (
                         <div
                             className="feature-card rounded-xl bg-white p-5 pb-8 text-center"
