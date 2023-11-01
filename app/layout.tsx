@@ -7,6 +7,7 @@ import React from 'react';
 import Header from '@/app/Sections/Main/Header';
 import Footer from '@/app/Sections/Main/Footer';
 import { TemplateString } from 'next/dist/lib/metadata/types/metadata-types';
+import Script from 'next/script';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -57,6 +58,16 @@ export default function RootLayout({
         {children}
       <Footer />
       </body>
+      <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-H017NPVR7Z');
+        `}
+      </Script>
+      <Script async={true} src="https://www.googletagmanager.com/gtag/js?id=G-H017NPVR7Z" />
     </html>
   )
 }
