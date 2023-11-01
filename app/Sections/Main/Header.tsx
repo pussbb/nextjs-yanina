@@ -15,7 +15,7 @@ const Header = () => {
     const { width } = useWindowSize();
 
     return (
-        <header className="header fixed top-0 w-full shadow-md">
+        <header className="header fixed top-0 w-full shadow-md z-50	">
             <nav className="navbar container">
                 {/* logo */}
                 <div className="order-0">

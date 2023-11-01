@@ -5,7 +5,7 @@ import GreenCheck from '@/app/components/GreenCheck';
 
 const YaninaInfoSection = () => {
     return (
-        <section className={`section `}>
+        <section className={`section bg-theme-light`}>
             <div className="container">
                 <div className="items-center gap-8 md:grid md:grid-cols-2">
                     {/* Carousel */}

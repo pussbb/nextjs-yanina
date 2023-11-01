@@ -16,3 +16,13 @@
 @layer utilities {
   @import "utilities";
 }
+
+
+li:has(.check-mark) {
+  align-items: baseline;
+}
+
+li .check-mark {
+  top: 2px;
+  position: relative;
+}

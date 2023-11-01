@@ -26,7 +26,7 @@ export default function Home() {
               <Image
                   className="mx-auto mt-12"
                   src={'/images/logo.svg'}
-                  width={750}
+                  width={550}
                   height={390}
                   alt="logo image"
                   priority
@@ -62,8 +62,8 @@ export default function Home() {
                             <Image
                                 className="mx-auto"
                                 src={'/images/checkmark-circle.svg'}
-                                width={30}
-                                height={30}
+                                width={16}
+                                height={16}
                                 alt=""
                             />
                             <div className="mt-4">
@@ -126,6 +126,7 @@ export default function Home() {
         <HealthyFeetPrices />
 
         <HealthyFeetInfo />
+
     </main>
   )
 }
