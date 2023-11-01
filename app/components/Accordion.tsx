@@ -38,7 +38,7 @@ export const Accordion = ({ items }: AccordionProps) => {
     };
 
     return (
-        <section className="accordion--container my-16 drop-shadow-xl  mx-auto offset-y-0 offset-x-8" style={{ width: '80%' }}>
+        <section className="accordion--container drop-shadow-xl  mx-auto offset-y-0 offset-x-8" style={{ width: '80%' }}>
             {accordionData.map((accordionItem, index) => (
                 <div
                     key={accordionItem.id}
