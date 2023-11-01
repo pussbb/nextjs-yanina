@@ -123,7 +123,7 @@ const HealthyFeetInfo = () => {
                             />
                         </div>
                         <div className="mt-5 text-center md:mt-0 md:text-left md:col-6 lg:col-5">
-                            <h2>Готові розпочати?</h2>
+                            <h2>Готові розпочати співпрацю?</h2>
                             <p className="mt-6">
                                 Тоді почнемо з першого кроку — замовте курс «Здорова стопа» для дітей 4-12 років.
                                 та обговоримо деталі.
