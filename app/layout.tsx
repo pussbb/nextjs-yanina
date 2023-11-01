@@ -6,6 +6,7 @@ import { Poppins } from 'next/font/google';
 import React from 'react';
 import Header from '@/app/Sections/Main/Header';
 import Footer from '@/app/Sections/Main/Footer';
+import { TemplateString } from 'next/dist/lib/metadata/types/metadata-types';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -17,8 +18,31 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://yaninapopesko.com.ua/'),
     title: 'Яніна Попеско',
+    //viewport: 'width=device-width, initial-scale=1',
+    robots:  { index: true, follow: false },
+    applicationName: 'Яніна Попеско',
+    openGraph: {
+        title: 'Яніна Попеско',
+        description: 'Онлайн курс «Здорова стопа» для дітей 4-12 років Виправляємо вальгус і плоскостопість за 20 хвилин на день',
+        siteName: 'Яніна Попеско',
+        locale: 'uk_UA',
+        countryName: 'Ukraine'
+    },
+    keywords: [
+        'Здорова стопа',
+        'онлайн курс',
+        'вальгус',
+        'плоскостопість',
+        'вальгусна деформація',
+        'плоскостопість у дітей',
+        'вправи для дітей',
+        'вправи для дітей з вальгусною деформацією',
+        'вправи для дітей з плоскостопістю',
+    ],
     description: 'Онлайн курс «Здорова стопа» для дітей 4-12 років Виправляємо вальгус і плоскостопість за 20 хвилин на день',
+    manifest: '/manifest.json',
 }
 
 export default function RootLayout({

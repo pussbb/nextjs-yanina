@@ -1,0 +1,25 @@
+{
+  "short_name": "Яніна Попеско",
+  "name": "Онлайн курс «Здорова стопа» для дітей 4-12 років Виправляємо вальгус і плоскостопість за 20 хвилин на день",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "365x261"
+    },
+    {
+      "src": "favicon_name.png",
+      "type": "image/png",
+      "sizes": "365x36"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#a56cc1",
+  "background_color": "#fcfaf7"
+}
