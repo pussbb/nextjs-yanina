@@ -26,3 +26,37 @@ li .check-mark {
   top: 2px;
   position: relative;
 }
+
+
+@media (max-width:900px) {
+  h1, .h1 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.05rem;
+  }
+  h2.specialh2 {
+    font-size: 1.45rem;
+  }
+  h5 {
+    font-size: 0.75rem;
+  }
+  .feature-card {
+    max-height: 1700px !important;
+  }
+  .section {
+    padding-top: 25px !important;
+  }
+  h2.thisCourse {
+    font-size: 1.25rem;
+  }
+
+  .main-page .section:first-child {
+    padding-top: 60px !important;
+  }
+  span.spanPlanType:before {
+    content: "\a";
+    white-space: pre;
+  }
+}
+

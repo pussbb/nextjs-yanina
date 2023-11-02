@@ -8,29 +8,33 @@ import HealthyFeetInfo from '@/app/Sections/HealthyFeet/HealthyFeetInfo';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col justify-between p-1">
+    <main className="main-page flex min-h-screen flex-col justify-between p-1">
       <section className="section pb-[50px]">
         <div className="container">
           <div className="row text-center">
             <div className="mx-auto lg:col-10">
               <h1 className="font-primary font-bold">
-                Онлайн курс «Здорова стопа» для дітей 4-12 років
+                Онлайн курс «Здорова стопа»
               </h1>
+              <h3> для дітей 4-12 років</h3>
               <p className="mt-4">
-                Виправляємо вальгус і плоскостопість за 20 хвилин на день.<br/>
-                Старт: 7 листопада.<br/>
-              </p>
+                  Старт: 7 листопада.<br/>
                   <Link className="btn btn-primary mt-4" href={'/order'}>
-                    Замовити
-                  </Link>
-              <Image
-                  className="mx-auto mt-12"
-                  src={'/images/logo.svg'}
-                  width={550}
-                  height={390}
-                  alt="logo image"
-                  priority
-              />
+                      Замовити
+                  </Link><br/>
+
+                  <Image
+                      className="mx-auto mt-12"
+                      src={'/imgs/IMG_4468.jpeg'}
+                      width={550}
+                      height={390}
+                      alt="logo image"
+                      priority
+                  />
+                  <br/><br/>
+                  <h5>Виправляємо вальгус і плоскостопість за 20 хвилин на день.</h5><br/>
+              </p>
+
             </div>
           </div>
         </div>
@@ -39,10 +43,7 @@ export default function Home() {
         <section className="section bg-theme-light">
             <div className="container">
                 <div className="text-center">
-                    <h2>
-                        Для кого підходить?<br/>
-                        Дітям від 4 до 12 років які мають:
-                    </h2>
+                    <h3><h2 className={'specialh2'}>Для кого підходить?</h2> Дітям від 4 до 12 років які мають:</h3>
                 </div>
                 <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
                     {[
@@ -53,22 +54,22 @@ export default function Home() {
                         'важка хода',
                         'шльопаюча хода',
                         'скаржиться на біль у ногах',
-                        'швидко втомлюється після довгих прогулянок, незграбний'
+                        'швидко втомлюється після довгих прогулянок'
                     ].map((item, i) => (
                         <div
-                            className="feature-card rounded-xl bg-white p-5 pb-8 text-center"
+                            className="feature-card rounded-xl bg-white  p-1 pb-2 text-center"
                             key={`feature-${i}`}
                         >
-                            <Image
-                                className="mx-auto"
-                                src={'/images/checkmark-circle.svg'}
-                                width={16}
-                                height={16}
-                                alt=""
-                            />
-                            <div className="mt-4">
-                                <p className="font-bold">{item}</p>
-                            </div>
+                            <p className="font-bold">
+                                <Image
+                                    className="mx-auto"
+                                    src={'/images/checkmark-circle.svg'}
+                                    width={16}
+                                    height={16}
+                                    alt=""
+                                />
+                                {item}
+                            </p>
                         </div>
                     ))}
                 </div>
@@ -80,20 +81,24 @@ export default function Home() {
                 <div className="items-center gap-8 md:grid md:grid-cols-2">
                     {/* Carousel */}
                     <div className={`service-carousel md:order-2`}>
-                                зображення
+                        <Image
+                            className="mx-auto"
+                            src={'/imgs/IMG_4919-2.JPG'}
+                            width={585}
+                            height={582}
+                            alt=""
+                        />
                     </div>
                     {/* Content */}
-                    <div
-                        className={`service-content mt-5 md:mt-0 md:order-1`}
-                    >
-                        <h2 className="font-bold leading-[40px]">
-                            Цей курс для вас, якщо:
+                    <div className={`service-content mt-5 md:mt-0 md:order-1`}>
+                        <h2 className="thisCourse font-bold leading-[40px]">
+                            Цей курс для вас, <span >якщо:</span>
                         </h2>
                         <p className="mt-4 mb-2">
                             <ul className='max-w-md space-y-1 text-gray-500 list-disc list-inside'>
                                 {
                                     [
-                                        'Хочете щоб Ваша дитина виросла здоровою, кріпкою, підтянутою, з хорошою координацією і легкою походкою.',
+                                        'Хочете щоб Ваша дитина виросла здоровою, кріпкою, підтянутою, з хорошою координацією і легкою ходою.',
                                         'Шукаєте єфективні вправи, щоб дитина забула про біль у ногах, не сильно втомлювалася і могла займатися з успіхом будь-якою активністі.',
                                         'Бажаєте привчити дитину займатися собою та створити фундамент здорового майбутнього'
                                     ].map((item, index) =>

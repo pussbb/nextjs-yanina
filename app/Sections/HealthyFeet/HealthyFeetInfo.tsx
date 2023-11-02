@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import GreenCheck from '@/app/components/GreenCheck';
 import { Accordion } from '@/app/components/Accordion';
 import Image from 'next/image';
@@ -14,24 +14,18 @@ import "swiper/css/pagination";
 
 const service = [
     {
-        src: '/imgs/IMG_4206.JPG',
+        src: '/imgs/IMG_0831.JPG',
         width: 650,
         height: 853,
     },
     {
-        src: '/imgs/IMG_4919-2.JPG',
-        width: 650,
-        height: 853,
-    },
-    {
-        src: '/imgs/photo_2023-11-01_21-20-53.jpg',
+        src: '/imgs/IMG_8197.jpeg',
         width: 650,
         height: 853,
     }
 ]
 
 const HealthyFeetInfo = () => {
-    const maxImageHeight = Math.max(...service.map((item) => item.height))
     return (
         <>
             <section className={'section bg-theme-light'}>
@@ -39,26 +33,14 @@ const HealthyFeetInfo = () => {
                     <div className="items-center gap-8 md:grid md:grid-cols-2">
                         {/* Carousel */}
                         <div className={'service-carousel md:order-2'}>
-                            <Swiper
-                                modules={[ Autoplay, Pagination]}
-                                centeredSlides={true}
-                                centeredSlidesBounds={true}
-                                pagination={
-                                    service.length > 1 ? { clickable: true } : false
-                                }
-                                autoplay={{
-                                    delay: 5000,
-                                    disableOnInteraction: false,
-                                }}
-                                init={true}
-                            >
-                                {/* Slides */}
-                                {service?.map((slide, index) => (
-                                    <SwiperSlide key={index}>
-                                        <img loading="lazy" src={slide.src} style={{ margin: 'auto' }} alt="" width={slide.width} height={slide.height} />
-                                    </SwiperSlide>
-                                ))}
-                            </Swiper>
+                            <Image
+                                className="mx-auto mt-12"
+                                src={'/imgs/IMG_4206.JPG'}
+                                width={550}
+                                height={390}
+                                alt="yanina popesko image"
+                                priority
+                            />
                         </div>
                         {/* Content */}
                         <div className={'service-content mt-5 md:mt-0 md:order-1'}>
@@ -121,7 +103,7 @@ const HealthyFeetInfo = () => {
                     },
                     {
                         title: 'Скільки разів на тиждень треба займатися?',
-                        content: 'Я раджу займатися кожен день по 15-20 хвилин.'
+                        content: 'Я раджу займатися кожен день по 15-30 хвилин.'
                     },
                     {
                         title: 'Чому в курсі вправи не лише на стопи?',
@@ -156,14 +138,26 @@ const HealthyFeetInfo = () => {
                 <div className="section container rounded-xl shadow">
                     <div className="row  mx-auto items-center justify-center">
                         <div className="md:col-5 lg:col-4">
-                            <Image
-                                className="mx-auto mt-12"
-                                src={'/imgs/IMG_4784.jpeg'}
-                                width={550}
-                                height={390}
-                                alt="yanina popesko image"
-                                priority
-                            />
+                            <Swiper
+                                modules={[ Autoplay, Pagination]}
+                                centeredSlides={true}
+                                centeredSlidesBounds={true}
+                                pagination={
+                                    service.length > 1 ? { clickable: true } : false
+                                }
+                                autoplay={{
+                                    delay: 5000,
+                                    disableOnInteraction: false,
+                                }}
+                                init={true}
+                            >
+                                {/* Slides */}
+                                {service?.map((slide, index) => (
+                                    <SwiperSlide key={index}>
+                                        <img loading="lazy" src={slide.src} style={{ margin: 'auto' }} alt="" width={slide.width} height={slide.height} />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
                         </div>
                         <div className="mt-5 text-center md:mt-0 md:text-left md:col-6 lg:col-5">
                             <h2>Готові розпочати співпрацю?</h2>

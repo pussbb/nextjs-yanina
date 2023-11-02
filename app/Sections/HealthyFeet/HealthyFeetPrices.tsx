@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import GreenCheck from '@/app/components/GreenCheck';
 
 const plans = [
     {
         title: 'Базовий',
         subtitle: '',
         price: 1499,
-        type: 'місяць',
+        type: '1 місяць',
         recommended: false,
         features: [
             '8 комплексів',
@@ -13,10 +14,6 @@ const plans = [
             '1 місяць відкритого доступу',
             'закритий прямий ефір з лікарем-ортопедом',
             'рекомендації стосовно вашого діагнозу',
-            '   ',
-            '   ',
-            '   ',
-            '   ',
         ],
         button: {
             label: 'Замовити',
@@ -64,14 +61,15 @@ const HealthyFeetPrices = () => {
                                 <h4>{plan.title}</h4>
                                 <div className="mt-5">
                                     <span className="text-5xl text-dark">₴ {plan.price}</span>
-                                    <span>/ {plan.type}</span>
+                                    <span>/</span>
+                                    <span className={'spanPlanType'}>{plan.type}</span>
                                 </div>
                                 <h5 className="mt-2 font-normal text-text">
                                     {plan.subtitle}
                                 </h5>
-                                <ul className="mt-5">
+                                <ul className="mt-5" style={{ textAlign: 'left' }}>
                                     {plan.features.map((feature, index) => (
-                                        <li className="mb-[10px] leading-5" key={index}>
+                                        <li className="mb-[10px] leading-5 flex items-center" key={index} ><GreenCheck />
                                             {feature}
                                         </li>
                                     ))}
