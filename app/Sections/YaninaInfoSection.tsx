@@ -1,6 +1,5 @@
 "use client";
 
-import Image from 'next/image';
 import GreenCheck from '@/app/components/GreenCheck';
 
 import React from 'react';
@@ -37,14 +36,12 @@ const service = [
 
 const YaninaInfoSection = () => {
 
-    const maxImageHeight = Math.max(...service.map((item) => item.height))
-
     return (
         <section className={`section bg-theme-light`}>
             <div className="container">
                 <div className="items-center gap-8 md:grid md:grid-cols-2">
                     {/* Carousel */}
-                    <div className={`service-carousel md:order-1`} style={{ minHeight: maxImageHeight, }}>
+                    <div className={`service-carousel md:order-1`}>
                         <Swiper
                             modules={[Autoplay, Pagination]}
                             pagination={

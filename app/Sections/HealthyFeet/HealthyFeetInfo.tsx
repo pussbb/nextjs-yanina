@@ -1,10 +1,37 @@
+"use client";
 import GreenCheck from '@/app/components/GreenCheck';
 import { Accordion } from '@/app/components/Accordion';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import React from 'react';
+
+import { Autoplay, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+const service = [
+    {
+        src: '/imgs/IMG_4206.JPG',
+        width: 650,
+        height: 853,
+    },
+    {
+        src: '/imgs/IMG_4919-2.JPG',
+        width: 650,
+        height: 853,
+    },
+    {
+        src: '/imgs/photo_2023-11-01_21-20-53.jpg',
+        width: 650,
+        height: 853,
+    }
+]
 
 const HealthyFeetInfo = () => {
+    const maxImageHeight = Math.max(...service.map((item) => item.height))
     return (
         <>
             <section className={'section bg-theme-light'}>
@@ -12,7 +39,26 @@ const HealthyFeetInfo = () => {
                     <div className="items-center gap-8 md:grid md:grid-cols-2">
                         {/* Carousel */}
                         <div className={'service-carousel md:order-2'}>
-                            зображення
+                            <Swiper
+                                modules={[ Autoplay, Pagination]}
+                                centeredSlides={true}
+                                centeredSlidesBounds={true}
+                                pagination={
+                                    service.length > 1 ? { clickable: true } : false
+                                }
+                                autoplay={{
+                                    delay: 5000,
+                                    disableOnInteraction: false,
+                                }}
+                                init={true}
+                            >
+                                {/* Slides */}
+                                {service?.map((slide, index) => (
+                                    <SwiperSlide key={index}>
+                                        <img loading="lazy" src={slide.src} style={{ margin: 'auto' }} alt="" width={slide.width} height={slide.height} />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
                         </div>
                         {/* Content */}
                         <div className={'service-content mt-5 md:mt-0 md:order-1'}>
