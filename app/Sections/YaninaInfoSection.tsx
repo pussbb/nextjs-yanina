@@ -1,22 +1,68 @@
+"use client";
+
 import Image from 'next/image';
 import GreenCheck from '@/app/components/GreenCheck';
 
+import React from 'react';
 
+import { Autoplay, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+const service = [
+    {
+        src: '/imgs/IMG_2774.JPG',
+        width: 650,
+        height: 350,
+    },
+    {
+        src: '/imgs/IMG_0831.JPG',
+        width: 650,
+        height: 350,
+    },
+    {
+        src: '/imgs/IMG_8197.jpeg',
+        width: 650,
+        height: 350,
+    },
+    {
+        src: '/imgs/photo_2023-11-01_21-20-53.jpg',
+        width: 650,
+        height: 350,
+    }
+]
+// photo_2023-11-01_21-20-53.jpg
 
 const YaninaInfoSection = () => {
+
+    const maxImageHeight = Math.max(...service.map((item) => item.height))
+
     return (
         <section className={`section bg-theme-light`}>
             <div className="container">
                 <div className="items-center gap-8 md:grid md:grid-cols-2">
                     {/* Carousel */}
-                    <div className={`service-carousel md:order-1`}>
-                        <Image
-                            className="ml-1"
-                            src="/images/logo.svg"
-                            width={350}
-                            height={150}
-                            alt="logo image"
-                        />
+                    <div className={`service-carousel md:order-1`} style={{ minHeight: maxImageHeight, }}>
+                        <Swiper
+                            modules={[Autoplay, Pagination]}
+                            pagination={
+                                service.length > 1 ? { clickable: true } : false
+                            }
+                            autoplay={{
+                                delay: 5000,
+                                disableOnInteraction: false,
+                            }}
+                            init={true}
+                        >
+                            {/* Slides */}
+                            {service?.map((slide, index) => (
+                                <SwiperSlide key={index} style={{ }}>
+                                    <img loading="lazy" src={slide.src} alt="" width={slide.width} height={slide.height} />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
                     </div>
                     {/* Content */}
                     <div

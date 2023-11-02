@@ -112,17 +112,17 @@ const HealthyFeetInfo = () => {
                         <div className="md:col-5 lg:col-4">
                             <Image
                                 className="mx-auto mt-12"
-                                src={'/images/logo.svg'}
+                                src={'/imgs/IMG_4784.jpeg'}
                                 width={550}
                                 height={390}
-                                alt="logo image"
+                                alt="yanina popesko image"
                                 priority
                             />
                         </div>
                         <div className="mt-5 text-center md:mt-0 md:text-left md:col-6 lg:col-5">
                             <h2>Готові розпочати співпрацю?</h2>
                             <p className="mt-6">
-                                Тоді почнемо з першого кроку — замовте курс «Здорова стопа» для дітей 4-12 років.
+                                Тоді почнемо з першого кроку — замовте курс «Здорова стопа» для дітей 4-12 років
                                 та обговоримо деталі.
                             </p>
                             <Link className="btn btn-primary mt-4" href={'/order'}>Замовити</Link>
