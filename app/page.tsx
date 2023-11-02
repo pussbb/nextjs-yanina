@@ -24,11 +24,12 @@ export default function Home() {
                   </Link><br/>
 
                   <Image
-                      className="mx-auto mt-12"
-                      src={'/imgs/IMG_4468.jpeg'}
+                      className="mx-auto"
+                      src={'/imgs/banner.png'}
                       width={550}
-                      height={390}
+                      height={1284}
                       alt="logo image"
+                      style={{marginTop: '-10px'}}
                       priority
                   />
                   <br/><br/>
