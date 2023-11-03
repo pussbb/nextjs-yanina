@@ -68,33 +68,6 @@ const HealthyFeetInfo = () => {
                 </div>
             </section>
 
-            <section className={'section'}>
-                <div className="container">
-                    <div className="items-center gap-8 md:grid md:grid-cols-2">
-                        {/* Carousel */}
-                        <div className={'service-carousel md:order-2'}>
-                            зображення
-                        </div>
-                        {/* Content */}
-                        <div
-                            className={'service-content mt-5 md:mt-0 md:order-1'}
-                        >
-                            <h2 className="font-bold leading-[40px]">
-                                Що треба для занять на курсі?
-                            </h2>
-                            <p className="mt-4 mb-2">
-                                <ul className='max-w-md space-y-1 text-gray-500 list-disc list-inside'>
-                                    <li className={'flex items-center'}><GreenCheck />Фітнес стрічка довга</li>
-                                    <li className={'flex items-center'}><GreenCheck />Відео. І опис</li>
-                                    <li className={'flex items-center'}><GreenCheck />1,2-1,5 м,</li>
-                                    <li className={'flex items-center'}><GreenCheck />товщина 0,35-0,45 мм</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section className={'section bg-theme-light'}>
                 <Accordion items={[
                     {
