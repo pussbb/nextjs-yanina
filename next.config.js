@@ -6,7 +6,7 @@ const nextConfig = {
         return [
             {
                 source: '/buy',
-                destination: 'https://t.me/yanina_15_03',//'https://www.instagram.com/yanina_popesko/',
+                destination: 'https://t.me/yanina_popesko',//'https://www.instagram.com/yanina_popesko/',
                 permanent: true,
             },
         ]
