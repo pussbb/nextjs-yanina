@@ -2,6 +2,8 @@ import GreenCheck from '@/app/components/GreenCheck';
 import Image from 'next/image';
 
 const YaninaInfoSection = () => {
+    const yearsAsTrainer = new Date().getFullYear() - 2016
+    const yearsAsTrainer2 = new Date().getFullYear() - 2020
 
     return (
         <section className={`section bg-theme-light`}>
@@ -31,8 +33,8 @@ const YaninaInfoSection = () => {
                                     [
                                         'Вища освіта за спеціальністю «Фізична культура і спорт» за професійною кваліфікацією «Тренер-викладач»',
                                         'Більше 20 років в художній гімнастиці',
-                                        '7 років діяльності тренера з художньої гімнастики',
-                                        '3 роки діяльності тренера-реабілітолога',
+                                        `${yearsAsTrainer} років діяльності тренера з художньої гімнастики`,
+                                        `${yearsAsTrainer2} роки діяльності тренера-реабілітолога`,
                                         'Більше 300 щасливих вихованок',
                                         'Європейська ліцензія тренера з художньої гімнастики',
                                         'Українська національна суддівська ліцензія 4-ої категорії х художньої гімнастіки',
