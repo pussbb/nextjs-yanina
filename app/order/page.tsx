@@ -1,5 +1,9 @@
 import HealthyFeetPrices from '@/app/Sections/HealthyFeet/HealthyFeetPrices';
 import RefundRules from '@/app/Sections/RefundRules';
+import { Metadata } from 'next';
+import generateDefaultMetadata from '@/app/metadata';
+
+export const metadata: Metadata = generateDefaultMetadata('Замовити Онлайн курс «Здорова стопа»')
 
 const Page = () => {
     return (
