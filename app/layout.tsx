@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="uk">
+    <html lang="uk-UA">
       <body className={poppins.className}>
       <Header />
         {children}
