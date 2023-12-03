@@ -37,7 +37,9 @@ li .check-mark {
   }
   h2.specialh2 {
     font-size: 1.45rem;
+    @apply text-h2-sm md:text-h2;
   }
+
   h5 {
     font-size: 0.75rem;
   }

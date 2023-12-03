@@ -18,11 +18,9 @@ export default function Home() {
               </h1>
               <h3> для дітей 4-12 років</h3>
               <p className="mt-4">
-                  Старт: 7 листопада.<br/>
-                  <Link className="btn btn-primary mt-4" href={'/order'}>
-                      Замовити
-                  </Link><br/>
-
+                  Старт: 12 грудня.<br/>
+                  <Link className="btn btn-primary mt-4" href={'/order'}>Замовити</Link>
+                  <br/>
                   <Image
                       className="mx-auto"
                       src={'/imgs/banner.png'}
@@ -33,9 +31,9 @@ export default function Home() {
                       priority
                   />
                   <br/><br/>
-                  <h5>Виправляємо вальгус і плоскостопість за 20 хвилин на день.</h5><br/>
               </p>
-
+                <h5>Виправляємо вальгус і плоскостопість за 20 хвилин на день.</h5>
+                <br/>
             </div>
           </div>
         </div>
@@ -44,7 +42,8 @@ export default function Home() {
         <section className="section bg-theme-light">
             <div className="container">
                 <div className="text-center">
-                    <h3><h2 className={'specialh2'}>Для кого підходить?</h2> Дітям від 4 до 12 років які мають:</h3>
+                    <h2 className={'specialh2'}>Для кого підходить?</h2>
+                    <h3> Дітям від 4 до 12 років які мають:</h3>
                 </div>
                 <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
                     {[
@@ -95,7 +94,7 @@ export default function Home() {
                         <h2 className="thisCourse font-bold leading-[40px]">
                             Цей курс для вас, <span >якщо:</span>
                         </h2>
-                        <p className="mt-4 mb-2">
+                        <div className="mt-4 mb-2">
                             <ul className='max-w-md space-y-1 text-gray-500 list-disc list-inside'>
                                 {
                                     [
@@ -108,7 +107,7 @@ export default function Home() {
                                 }
                             </ul>
 
-                        </p>
+                        </div>
                             <Link
                                 href={'/order'}
                                 className="cta-link inline-flex items-center text-primary"

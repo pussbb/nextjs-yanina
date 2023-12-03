@@ -77,7 +77,7 @@ export const Accordion = ({ items }: AccordionProps) => {
                             }
                         )}
                     >
-                        <p>{accordionItem.content}</p>
+                        <div>{accordionItem.content}</div>
                     </div>
                 </div>
             ))}

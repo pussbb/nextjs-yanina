@@ -21,13 +21,9 @@ const YaninaInfoSection = () => {
                         />
                     </div>
                     {/* Content */}
-                    <div
-                        className={`service-content mt-5 md:mt-0 md:order-2`}
-                    >
-                        <h2 className="font-bold thisCourse leading-[40px]">
-                            Чому мені довіряють:
-                        </h2>
-                        <p className="mt-4 mb-2">
+                    <div className={`service-content mt-5 md:mt-0 md:order-2`} >
+                        <h2 className="font-bold thisCourse leading-[40px]"> Чому мені довіряють:</h2>
+                        <div className="mt-4 mb-2">
                             <ul className='max-w-md space-y-1 text-gray-500 list-disc list-inside'>
                                 {
                                     [
@@ -43,7 +39,7 @@ const YaninaInfoSection = () => {
                                     )
                                 }
                             </ul>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
