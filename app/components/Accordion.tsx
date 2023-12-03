@@ -1,6 +1,5 @@
 "use client"
 import { useMemo, useState, ReactElement } from "react";
-import clsx from 'clsx';
 import ArrowUpDown from '@/app/components/ArraoUpDown';
 
 const accordionItemType = {
@@ -43,16 +42,7 @@ export const Accordion = ({ items }: AccordionProps) => {
                 <div
                     key={accordionItem.id}
                     id={accordionItem.id}
-                    className={clsx(
-                        "accordion-item--container border border-neutral-200 bg-white overflow-hidden",
-                        {
-                            [accordionItemType.top]: index === 0,
-                            [accordionItemType.default]:
-                            index > 0 && index < accordionData.length - 1,
-                            [accordionItemType.bottom]:
-                            index === accordionData.length - 1
-                        }
-                    )}
+                    className={"accordion-item--container border border-neutral-200 bg-white overflow-hidden"}
                 >
                     <h2 className="accordion-item--heading mb-0">
                         <button
@@ -68,14 +58,7 @@ export const Accordion = ({ items }: AccordionProps) => {
                         </button>
                     </h2>
                     <div
-                        className={clsx(
-                            "accordion-item--content py-4 px-5 text-base",
-                            {
-                                hidden: activeAccordion !== accordionItem.id, // Use hidden class to animate height to 0
-                                "!visibility block":
-                                    activeAccordion === accordionItem.id // Use block class to show content again
-                            }
-                        )}
+                        className={`accordion-item--content py-4 px-5 text-base ${activeAccordion !== accordionItem.id ? 'hidden' : ''} ${activeAccordion === accordionItem.id ? "!visibility block" : ''}`}
                     >
                         <div>{accordionItem.content}</div>
                     </div>

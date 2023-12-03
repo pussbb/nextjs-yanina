@@ -39,6 +39,9 @@ li .check-mark {
     font-size: 1.45rem;
     @apply text-h2-sm md:text-h2;
   }
+  .section .container {
+    margin: 0 auto !important;
+  }
 
   h5 {
     font-size: 0.75rem;
