@@ -18,7 +18,7 @@ export default function Home() {
               </h1>
               <h3> для дітей 4-12 років</h3>
               <p className="mt-4">
-                  Старт: 12 грудня.<br/>
+                  Старт: 15 грудня.<br/>
                   <Link className="btn btn-primary mt-4" href={'/order'}>Замовити</Link>
                   <br/>
                   <Image
