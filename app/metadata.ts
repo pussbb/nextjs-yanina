@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 
+const defaultTitle = 'Яніна Попеско. Онлайн курс «Здорова стопа» для дітей 4-12 років Виправляємо вальгус і плоскостопість за 20 хвилин на день'
 //
-const generateDefaultMetadata = (title: string = 'Яніна Попеско'): Metadata => ({
+const generateDefaultMetadata = (title: string = defaultTitle): Metadata => ({
     metadataBase: new URL('https://yaninapopesko.com.ua/'),
     title: title,
     publisher: title,
