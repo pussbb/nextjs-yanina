@@ -18,7 +18,7 @@ const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
 });
 
-
+const isDev = process.env.NODE_ENV === 'development';
 export const metadata: Metadata = generateDefaultMetadata();
 
 
@@ -34,16 +34,21 @@ export default function RootLayout({
         {children}
       <Footer />
       </body>
-      <Script id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-H017NPVR7Z');
-        `}
-      </Script>
-      <Script async={true} src="https://www.googletagmanager.com/gtag/js?id=G-H017NPVR7Z" />
+      {
+          !isDev && (
+              <>
+                  <Script id="google-analytics">
+                      {`
+                          window.dataLayer = window.dataLayer || [];
+                          function gtag(){dataLayer.push(arguments);}
+                          gtag('js', new Date());
+                          gtag('config', 'G-H017NPVR7Z');
+                      `}
+                  </Script>
+                  <Script async={true} src="https://www.googletagmanager.com/gtag/js?id=G-H017NPVR7Z" />
+              </>
+          )
+      }
     </html>
   )
 }
