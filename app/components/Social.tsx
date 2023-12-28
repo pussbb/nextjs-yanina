@@ -30,6 +30,7 @@ import {
     IoMail,
 } from "react-icons/io5";
 import { FaTelegram } from 'react-icons/fa';
+import React from 'react';
 
 const socialIcons = {
     'facebook': (facebook: string) => <li key={'facebook'} className="inline-block">
@@ -322,7 +323,8 @@ const socialIcons = {
             <FaTelegram/>
         </a>
     </li>,
-}
+} as Record<string, (item: string) => React.ReactNode>
+
 const Social = ({ source, className }: { className: string, source: Record<string, string> }) => {
 
     return (

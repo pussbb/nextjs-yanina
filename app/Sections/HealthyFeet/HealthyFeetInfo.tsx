@@ -127,7 +127,7 @@ const HealthyFeetInfo = () => {
                                 {/* Slides */}
                                 {service?.map((slide, index) => (
                                     <SwiperSlide key={index}>
-                                        <img loading="lazy" src={slide.src} style={{ margin: 'auto' }} alt="" width={slide.width} height={slide.height} />
+                                        <Image loading="lazy" src={slide.src} style={{ margin: 'auto' }} alt="" width={slide.width} height={slide.height} />
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
