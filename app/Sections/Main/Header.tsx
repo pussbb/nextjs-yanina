@@ -20,9 +20,9 @@ const Header = () => {
                 {/* logo */}
                 <div className="order-0">
                     <Image
-                        priority
                         width={width > 768 ? 250 : 177}
                         height={57}
+                        loading={'lazy'}
                         src={'/images/logo_name.svg'}
                         alt="website logo"
                     />

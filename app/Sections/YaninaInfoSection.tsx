@@ -16,8 +16,8 @@ const YaninaInfoSection = () => {
                             src={'/imgs/IMG_4784.jpeg'}
                             width={550}
                             height={390}
+                            loading={'lazy'}
                             alt="yanina popesko image"
-                            priority
                         />
                     </div>
                     {/* Content */}

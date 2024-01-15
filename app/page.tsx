@@ -26,8 +26,8 @@ export default function Home() {
                       width={550}
                       height={1284}
                       alt="logo image"
+                      loading={'lazy'}
                       style={{marginTop: '-10px'}}
-                      priority
                   />
                   <br/><br/>
               </p>
@@ -65,6 +65,7 @@ export default function Home() {
                                     src={'/images/checkmark-circle.svg'}
                                     width={16}
                                     height={16}
+                                    loading={'lazy'}
                                     alt=""
                                 />
                                 {item}
@@ -85,6 +86,7 @@ export default function Home() {
                             src={'/imgs/IMG_4919-2.JPG'}
                             width={585}
                             height={582}
+                            loading={'lazy'}
                             alt=""
                         />
                     </div>
@@ -118,6 +120,7 @@ export default function Home() {
                                     width={18}
                                     height={14}
                                     alt="arrow"
+                                    loading={'lazy'}
                                 />
                             </Link>
                     </div>

@@ -31,9 +31,9 @@ const Footer = () => {
                     <div className="md-12 sm:col-6 lg:col-3">
                         <Link href="/" aria-label="Bigspring">
                             <Image
-                                priority
                                 width={364}
                                 height={77}
+                                loading={'lazy'}
                                 src={'/images/logo_name.svg'}
                                 alt="website logo"
                             />

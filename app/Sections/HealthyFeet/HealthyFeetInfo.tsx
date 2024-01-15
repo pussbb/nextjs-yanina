@@ -38,8 +38,8 @@ const HealthyFeetInfo = () => {
                                 src={'/imgs/IMG_4206.JPG'}
                                 width={550}
                                 height={390}
+                                loading={'lazy'}
                                 alt="yanina popesko image"
-                                priority
                             />
                         </div>
                         {/* Content */}
