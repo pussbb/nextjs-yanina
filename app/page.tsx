@@ -56,26 +56,22 @@ export default function Home() {
                         'швидко втомлюється після довгих прогулянок'
                     ].map((item, i) => (
                         <div
-                            className="feature-card rounded-xl bg-white p-1 pb-2 text-center"
+                            className="feature-card rounded-xl bg-white p-1 pb-2 text-center  flex items-center"
                             key={`feature-${i}`}
                         >
-                            <div className="flex flex-row font-bold">
-                                <div className="basis-1/4 items-stretch">
-                                    <Image
-                                        className="mx-auto"
-                                        src={'/images/checkmark-circle.svg'}
-                                        width={16}
-                                        height={16}
-                                        loading={'lazy'}
-                                        alt=""
-                                    />
-                                </div>
-                                <div className="basis-1/1">{item}</div>
+                            <Image
+                                className="mx-2"
+                                src={'/images/checkmark-circle.svg'}
+                                width={16}
+                                height={16}
+                                loading={'lazy'}
+                                alt=""
+                            />
+                            <div className="font-bold">
+
+                                {item}
                             </div>
-                            <p className="font-bold">
 
-
-                            </p>
                         </div>
                     ))}
                 </div>
