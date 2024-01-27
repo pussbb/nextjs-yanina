@@ -26,7 +26,7 @@ const plans = [
         title: 'VIP',
         subtitle: '',
         price: 2499,
-        type: '5 місяців',
+        type: '5 тижнів',
         recommended: false,
         features: [
             '8 комплексів тренувань',

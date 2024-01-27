@@ -18,7 +18,7 @@ export default function Home() {
               </h1>
               <h3> для дітей 4-12 років</h3>
               <p className="mt-4">
-                  <Link className="btn btn-primary mt-4" href={'/order'}>Замовити</Link>
+                  <Link className="btn btn-primary mt-4 " href={'/order'}>Замовити</Link>
                   <br/>
                   <Image
                       className="mx-auto"
@@ -114,7 +114,7 @@ export default function Home() {
                             <br/>
                             <Link
                                 href={'/order'}
-                                className="cta-link inline-flex items-center text-primary"
+                                className="cta-link inline-flex items-center text-primary raspberry-color"
                             >
                                 Замовити
                                 <Image
