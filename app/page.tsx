@@ -44,7 +44,7 @@ export default function Home() {
                     <h2 className={'specialh2'}>Для кого підходить?</h2>
                     <h3> Дітям від 4 до 12 років які мають:</h3>
                 </div>
-                <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="mt-8 grid gap-x-3 gap-y-3 sm:grid-cols-2 lg:grid-cols-4">
                     {[
                         'плоскостопість 1-2 ступеня',
                         'вальгус 1-2 ступеня',
@@ -56,19 +56,25 @@ export default function Home() {
                         'швидко втомлюється після довгих прогулянок'
                     ].map((item, i) => (
                         <div
-                            className="feature-card rounded-xl bg-white  p-1 pb-2 text-center"
+                            className="feature-card rounded-xl bg-white p-1 pb-2 text-center"
                             key={`feature-${i}`}
                         >
+                            <div className="flex flex-row font-bold">
+                                <div className="basis-1/4 items-stretch">
+                                    <Image
+                                        className="mx-auto"
+                                        src={'/images/checkmark-circle.svg'}
+                                        width={16}
+                                        height={16}
+                                        loading={'lazy'}
+                                        alt=""
+                                    />
+                                </div>
+                                <div className="basis-1/1">{item}</div>
+                            </div>
                             <p className="font-bold">
-                                <Image
-                                    className="mx-auto"
-                                    src={'/images/checkmark-circle.svg'}
-                                    width={16}
-                                    height={16}
-                                    loading={'lazy'}
-                                    alt=""
-                                />
-                                {item}
+
+
                             </p>
                         </div>
                     ))}
@@ -77,7 +83,7 @@ export default function Home() {
         </section>
 
         <section className={`section `}>
-            <div className="container">
+        <div className="container">
                 <div className="items-center gap-8 md:grid md:grid-cols-2">
                     {/* Carousel */}
                     <div className={`service-carousel md:order-2`}>
@@ -109,6 +115,7 @@ export default function Home() {
                             </ul>
 
                         </div>
+                            <br/>
                             <Link
                                 href={'/order'}
                                 className="cta-link inline-flex items-center text-primary"
