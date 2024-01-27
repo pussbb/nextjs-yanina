@@ -56,7 +56,7 @@ export default function Home() {
                         'швидко втомлюється після довгих прогулянок'
                     ].map((item, i) => (
                         <div
-                            className="feature-card rounded-xl bg-white p-1 pb-2 text-center  flex items-center"
+                            className="feature-card rounded-xl bg-white p-1 pb-2 text-left flex items-center"
                             key={`feature-${i}`}
                         >
                             <Image
