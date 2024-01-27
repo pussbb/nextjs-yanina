@@ -6,7 +6,7 @@ const plans = [
         title: 'Basic',
         subtitle: '',
         price: 1499,
-        type: '1 місяць',
+        type: '5 тижнів',
         recommended: false,
         features: [
             '8 комплексів тренувань',
