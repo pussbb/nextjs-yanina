@@ -4,6 +4,7 @@ import YaninaInfoSection from '@/app/Sections/YaninaInfoSection';
 import GreenCheck from '@/app/components/GreenCheck';
 import HealthyFeetPrices from '@/app/Sections/HealthyFeet/HealthyFeetPrices';
 import HealthyFeetInfo from '@/app/Sections/HealthyFeet/HealthyFeetInfo';
+import RegisterForTheCourse from "@/app/Sections/RegisterForTheCourse";
 
 
 export default function Home() {
@@ -136,6 +137,8 @@ export default function Home() {
         <HealthyFeetPrices />
 
         <HealthyFeetInfo />
+
+        <RegisterForTheCourse />
 
     </main>
   )
