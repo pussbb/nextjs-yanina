@@ -36,56 +36,16 @@ img.profile {
   @apply ring-2 p-1 rounded-full;
   --tw-ring-color: #FF1493;
 }
-/*
-0%  { -webkit-transform: rotate(0deg) translateX(5px) translateY(120px) rotate(0deg) scale(1); }
-25%  { -webkit-transform: rotate(90deg) translateX(5px) translateY(120px) rotate(-90deg) scale(.75); }
-50%  { -webkit-transform: rotate(180deg) translateX(5px) translateY(120px) rotate(-180deg) scale(.60); }
-75%  { -webkit-transform: rotate(270deg) translateX(5px) translateY(120px) rotate(-270deg) scale(.75); }
-100%  { -webkit-transform: rotate(360deg) translateX(5px) translateY(120px) rotate(-360deg) scale(1); }
-*/
+
 .social-list {
   position: absolute;
-  max-width: 20vw;
-  left: 20px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
   list-style: none;
   @apply p-0;
-  @media (max-width:900px) {
-
-  }
-  @media (min-width:1200px) {
-    left: 3vw;
-  }
 }
-
-.social-list .first {
-  transform: rotate(0deg) translateX(1vw) translateY(-3vh) rotate(0deg) scale(1);
-}
-
-.social-list .second {
-  transform: rotate(0deg) translateX(2vw) translateY(0vh) rotate(0deg) scale(1);
-  @media (max-width:900px) {
-    transform: rotate(0deg) translateX(6vw) translateY(0vh) rotate(0deg) scale(1);
-  }
-}
-
-.social-list .third {
-  transform: rotate(0deg) translateX(4vw) translateY(0vh) rotate(0deg) scale(1);
-  @media (max-width:900px) {
-    transform: rotate(0deg) translateX(14vw) translateY(0vh) rotate(0deg) scale(1);
-  }
-}
-
-.social-list .last {
-  transform:  rotate(0deg) translateX(6vw) translateY(-3vh) rotate(0deg) scale(1);
-  @media (max-width:900px) {
-    transform:  rotate(0deg) translateX(19vw) translateY(-3vh) rotate(0deg) scale(1);
-  }
-}
-
 
 img.profile:hover {
   @apply ring-4;

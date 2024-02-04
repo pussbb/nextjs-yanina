@@ -20,13 +20,15 @@ export const YaninaPortfolio = () => {
                   <div className={'inline-flex text-left social-list'} style={{
                       top: contentRect.bottom + 10,
                       width: contentRect.width,
-                      //left: contentRect.left
+                      left: contentRect.left - 20
                   }}>
                       <a
                           aria-label="location"
                           href={'https://t.me/yaninapopesko'}
                           target="_blank"
-                          className={'first'}
+                          style={{
+                              transform: `rotate(0deg) translateX(${contentRect.left}) translateY(-24px) rotate(0deg) scale(1) !important`
+                          }}
                           rel="noopener noreferrer nofollow"
                       >
                           <img className={'social'} loading={'lazy'} alt={'telegram'} src={'/social/telegram.svg'}/>
@@ -35,7 +37,9 @@ export const YaninaPortfolio = () => {
                           aria-label="location"
                           href={'https://www.instagram.com/yanina_popesko/'}
                           target="_blank"
-                          className={'second'}
+                          style={{
+                              transform: `rotate(0deg) translateX(${contentRect.left + 10}px) translateY(-2px) rotate(0deg) scale(1) !important`
+                          }}
                           rel="noopener noreferrer nofollow"
                       >
                           <img className={'social'} loading={'lazy'} alt={'instagram'}
@@ -45,7 +49,9 @@ export const YaninaPortfolio = () => {
                           aria-label="location"
                           href={'https://www.facebook.com/yaninapopesko'}
                           target="_blank"
-                          className={'third'}
+                          style={{
+                              transform: `rotate(0deg) translateX(${contentRect.left + 25}px) translateY(-1px) rotate(0deg) scale(1) !important`
+                          }}
                           rel="noopener noreferrer nofollow"
                       >
                           <img className={'social'} loading={'lazy'} alt={'facebook'}
@@ -55,7 +61,9 @@ export const YaninaPortfolio = () => {
                           aria-label="location"
                           href={'https://www.tiktok.com/@yaninapopesko'}
                           target="_blank"
-                          className={'last'}
+                          style={{
+                              transform: `rotate(0deg) translateX(${contentRect.left + 35}px) translateY(-24px) rotate(0deg) scale(1) !important`
+                          }}
                           rel="noopener noreferrer nofollow"
                       >
                           <img className={'social'} loading={'lazy'} alt={'tiktok'}

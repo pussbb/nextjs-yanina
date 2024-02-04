@@ -49,6 +49,7 @@ export function useRect<T extends HTMLElement>(
             return () => {
                 if (!resizeObserver) return;
                 resizeObserver.disconnect();
+                // @ts-expect-error
                 resizeObserver = null;
             };
         } else {
