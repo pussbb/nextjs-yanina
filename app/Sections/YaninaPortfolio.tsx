@@ -1,7 +1,7 @@
 "use client";
 import React, {useRef, useState} from 'react';
 import {getRect, useRect} from "@/app/hooks/useRect";
-import { motion } from 'framer-motion';
+import {motion, useInView} from 'framer-motion';
 
 const variants = {
     initial: {
@@ -25,7 +25,8 @@ const variants = {
 export const YaninaPortfolio = () => {
     const imageRef = React.createRef<HTMLImageElement>();
     let contentRect = useRect(imageRef)
-    const ref = useRef<HTMLDivElement|null>();
+    //const ref = useRef<HTMLDivElement|null>();
+    //const isInView = useInView(ref, { margin: "-100px" });
 
     return (
         <section className="section pb-[50px]" style={{ position: "relative" }}>
@@ -39,7 +40,7 @@ export const YaninaPortfolio = () => {
                 <motion.h6 variants={variants}>Yanina Popesko</motion.h6>
 
                 <motion.div
-                    ref={ref}
+                    //ref={ref}
                     className={'inline-flex text-left social-list'} style={{
                         //top: contentRect.top + 10,
                         width: contentRect.width,
