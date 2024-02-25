@@ -1,7 +1,7 @@
 "use client";
-import React, {useRef, useState} from 'react';
-import {getRect, useRect} from "@/app/hooks/useRect";
-import {motion, useInView} from 'framer-motion';
+import React from 'react';
+import {useRect} from "@/app/hooks/useRect";
+import {motion} from 'framer-motion';
 
 const variants = {
     initial: {
