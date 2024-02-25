@@ -58,7 +58,7 @@ const Header = () => {
                 >
                     <ul className="navbar-nav block w-full md:flex md:w-auto lg:space-x-2">
                         <li className="nav-item">
-                        <Link
+                            <Link
                                 href={'/'}
                                 className={`nav-link block py-1 ${
                                     pathname === '/' ? "nav-link-active" : ""
@@ -67,10 +67,21 @@ const Header = () => {
                                 Головна
                             </Link>
                         </li>
+                        <li className="nav-item">
+                            <Link
+                                href={'/online/demo'}
+                                className={`nav-link block py-1 ${
+                                    pathname === '/online/demo' ? "nav-link-active" : ""
+                                }`}
+                            >
+                                Консультація
+                            </Link>
+                        </li>
                     </ul>
 
                 </div>
-                <div className="d-flex order-1 ml-auto hidden min-w-[200px] items-center justify-end md:ml-0 md:flex md:order-2">
+                <div
+                    className="d-flex order-1 ml-auto hidden min-w-[200px] items-center justify-end md:ml-0 md:flex md:order-2">
                     <Link className="btn btn-primary z-0 py-[14px]" href={'/order'} rel="">
                         Замовити
                     </Link>
