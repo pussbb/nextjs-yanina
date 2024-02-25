@@ -10,7 +10,7 @@ type RectResult = {
     width: number;
 };
 
-function getRect<T extends HTMLElement>(element?: T): RectResult {
+export function getRect<T extends HTMLElement>(element?: T): RectResult {
     let rect: RectResult = {
         bottom: 0,
         height: 0,
@@ -24,11 +24,12 @@ function getRect<T extends HTMLElement>(element?: T): RectResult {
 }
 
 export function useRect<T extends HTMLElement>(
-    ref: React.RefObject<T>
+    ref: React.RefObject<T>,
 ): RectResult {
     const [rect, setRect] = useState<RectResult>(
         ref && ref.current ? getRect(ref.current) : getRect()
     );
+
 
     const handleResize = useCallback(() => {
         if (!ref.current) return;

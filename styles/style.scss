@@ -32,7 +32,9 @@ img.profile {
   min-height: 8vh;
   max-width: 40vw;
   max-height: 40vh;
+  position: relative;
   float: left;
+  margin-top: 20px;
   @apply ring-2 p-1 rounded-full;
   --tw-ring-color: #FF1493;
 }
