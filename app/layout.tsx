@@ -47,7 +47,7 @@ export default function RootLayout({
                   </Script>
                   <Script async={true} src="https://www.googletagmanager.com/gtag/js?id=G-H017NPVR7Z"/>
 
-                  <Script>
+                  <Script id='smartlook'>
                       {`
                   window.smartlook||(function(d) {
     var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
