@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import {useEffect, useRef, useState} from 'react';
 import useWindowSize from '@/hooks/useWindowSize';
 
 const Header = () => {
@@ -14,8 +14,22 @@ const Header = () => {
 
     const { width } = useWindowSize();
 
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event: Event) => {
+            if (ref.current && !ref.current?.contains(event.target)) {
+                setNavOpen(false);
+            }
+        };
+        document.addEventListener('click', handleClickOutside, true);
+        return () => {
+            document.removeEventListener('click', handleClickOutside, true);
+        };
+    }, [ ref ]);
+
     return (
-        <header className="header fixed top-0 w-full shadow-md z-50	bg-theme-light">
+        <header ref={ref} className="header fixed top-0 w-full shadow-md z-50	bg-theme-light">
             <nav className="navbar container">
                 {/* logo */}
                 <div className="order-0">
@@ -63,6 +77,7 @@ const Header = () => {
                                 className={`nav-link block py-1 ${
                                     pathname === '/' ? "nav-link-active" : ""
                                 }`}
+                                onClick={() => setNavOpen(false)}
                             >
                                 Головна
                             </Link>
@@ -70,6 +85,7 @@ const Header = () => {
                         <li className="nav-item">
                             <Link
                                 href={'/online/demo'}
+                                onClick={() => setNavOpen(false)}
                                 className={`nav-link block py-1 ${
                                     pathname === '/online/demo' ? "nav-link-active" : ""
                                 }`}

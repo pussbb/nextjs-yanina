@@ -2,6 +2,7 @@
 import React from 'react';
 import {useRect} from "@/app/hooks/useRect";
 import {motion} from 'framer-motion';
+import {TypeWriter} from "@/app/components/TypeWritter";
 
 const variants = {
     initial: {
@@ -22,6 +23,7 @@ const variants = {
     },
 };
 
+
 export const YaninaPortfolio = () => {
     const imageRef = React.createRef<HTMLImageElement>();
     let contentRect = useRect(imageRef)
@@ -36,8 +38,8 @@ export const YaninaPortfolio = () => {
                 initial="initial"
                 whileInView="animate"
             >
-                <motion.h3 variants={variants}>Яніна Попеско</motion.h3>
-                <motion.h6 variants={variants}>Yanina Popesko</motion.h6>
+                <h3><TypeWriter text={'Яніна Попеско'} /></h3>
+                <h6><TypeWriter text={'Yanina Popesko'} /></h6>
 
                 <motion.div
                     //ref={ref}
@@ -51,6 +53,7 @@ export const YaninaPortfolio = () => {
                     whileInView="animate"
                 >
                     <motion.a
+                            //variants={headerSkillVariants}
                             initial={{ opacity: 0, scale: 0.5 }}
                             animate={{
                                 y: 0,
@@ -62,6 +65,10 @@ export const YaninaPortfolio = () => {
                                 },
                                 translateY: 20,
                             }}
+                            whileInView="visible"
+                            drag
+                            dragConstraints={{ left: 10, right: 10, top: 10, bottom: 10 }}
+                            dragElastic={0.1}
                             whileHover={{ scale: 1.5 }}
                             whileTap={{ scale: 0.9 }}
                             href={'https://t.me/yaninapopesko'}
