@@ -9,7 +9,7 @@ export const sentenceVariants = {
 
 export const letterVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { opacity: { duration: 0 } } }
+    visible: { opacity: 1, transition: { opacity: { duration: 0.4 } } }
 };
 
 export const TypeWriter = ({ text, ...rest }) => (
@@ -17,6 +17,7 @@ export const TypeWriter = ({ text, ...rest }) => (
         key={text}
         variants={sentenceVariants}
         initial="hidden"
+        whileInView="animate"
         animate="visible"
         {...rest}
     >

@@ -152,8 +152,6 @@ export const YaninaPortfolio = () => {
                     ref={imageRef}
                     src="/portfolio/IMG_8808.webp"
                     alt="Yanina Portfolio"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.9 }}
                     transition={{
                         type: "smooth",
                         repeatType: "mirror",

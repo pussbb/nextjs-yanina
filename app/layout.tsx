@@ -8,6 +8,7 @@ import Footer from '@/app/Sections/Main/Footer';
 import Script from 'next/script';
 import { Metadata } from 'next';
 import generateDefaultMetadata from '@/app/metadata';
+import PageScroll from "@/app/Sections/PageScroll";
 
 
 const poppins = Poppins({
@@ -30,6 +31,7 @@ export default function RootLayout({
   return (
       <html lang="uk-UA">
       <body className={poppins.className}>
+          <PageScroll />
           <Header/>
           {children}
           <Footer/>
