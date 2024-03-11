@@ -18,6 +18,7 @@ const Header = () => {
 
     useEffect(() => {
         const handleClickOutside = (event: Event) => {
+            // @ts-expect-error
             if (ref.current && !ref.current?.contains(event.target)) {
                 setNavOpen(false);
             }

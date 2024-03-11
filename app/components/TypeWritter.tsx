@@ -12,6 +12,7 @@ export const letterVariants = {
     visible: { opacity: 1, transition: { opacity: { duration: 0.4 } } }
 };
 
+// @ts-expect-error
 export const TypeWriter = ({ text, ...rest }) => (
     <motion.p
         key={text}

@@ -6,7 +6,6 @@ import YaninaPortfolio from "@/app/Sections/YaninaPortfolio";
 import HealthyFeetIntro from "@/app/Sections/HealthyFeet/HealthyFeetIntro";
 import HealthFeetFeatures from "@/app/Sections/HealthyFeet/HealthFeetFeatures";
 import HealthyFeetForYou from "@/app/Sections/HealthyFeet/HealthyFeetForYou";
-import PageScroll from "@/app/Sections/PageScroll";
 
 
 export default function Home() {
