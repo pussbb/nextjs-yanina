@@ -167,7 +167,7 @@ export const YaninaPortfolio = () => {
                             }}/>
 
                     </div>
-                    <div className={'col-8'}>
+                    <div className={'col-8 collage'}>
                         <br/>
                         <br/>
                         <AnimatedText text={texts} className={'text-left text-base'}/>

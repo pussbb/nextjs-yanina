@@ -27,6 +27,26 @@ li .check-mark {
   position: relative;
 }
 
+.collage {
+  background-size: 10vw;
+  background-image: url("/portfolio/Untitled.png"), url("/portfolio/Untitled2.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position:
+          bottom left,
+          top right;
+}
+
+@media (max-width: 900px) {
+    .collage {
+      background-image: none;
+    }
+}
+
+.collage > .text-left {
+  color: white;
+  mix-blend-mode: difference;
+}
+
 img.profile {
   min-width: 5vw;
   min-height: 4vh;
