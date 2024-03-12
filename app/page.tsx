@@ -3,9 +3,9 @@ import HealthyFeetPrices from '@/app/Sections/HealthyFeet/HealthyFeetPrices';
 import HealthyFeetInfo from '@/app/Sections/HealthyFeet/HealthyFeetInfo';
 import RegisterForTheCourse from "@/app/Sections/RegisterForTheCourse";
 import YaninaPortfolio from "@/app/Sections/YaninaPortfolio";
-import HealthyFeetIntro from "@/app/Sections/HealthyFeet/HealthyFeetIntro";
 import HealthFeetFeatures from "@/app/Sections/HealthyFeet/HealthFeetFeatures";
 import HealthyFeetForYou from "@/app/Sections/HealthyFeet/HealthyFeetForYou";
+import HealthyFeetIntroShort from "@/app/Sections/HealthyFeet/HealthyFeetIntroShort";
 
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <main className="main-page flex min-h-screen flex-col justify-between p-1">
           <YaninaPortfolio/>
 
-          <HealthyFeetIntro />
+          <HealthyFeetIntroShort />
           <HealthFeetFeatures />
           <HealthyFeetForYou />
 

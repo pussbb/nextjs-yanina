@@ -28,15 +28,22 @@ li .check-mark {
 }
 
 img.profile {
-  min-width: 10vw;
-  min-height: 8vh;
-  max-width: 40vw;
+  min-width: 5vw;
+  min-height: 4vh;
+  max-width: 30vw;
   max-height: 40vh;
   position: relative;
   float: left;
   margin-top: 20px;
   @apply ring-1 p-1 rounded-full;
   --tw-ring-color: #FF1493;
+}
+@media (min-width:900px) {
+  img.profile {
+    max-width: 40vw;
+    min-width: 10vw;
+    min-height: 8vh;
+  }
 }
 
 .progress-bar {
@@ -62,7 +69,7 @@ img.profile {
 }
 
 img.profile:hover {
-  @apply ring-4;
+  @apply ring-2;
 }
 
 img.social {
