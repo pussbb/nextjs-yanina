@@ -27,12 +27,22 @@ li .check-mark {
   position: relative;
 }
 
+@keyframes animatedBackground {
+  from {
+    opacity: 0.05;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .collage {
   background-repeat: no-repeat;
   background-size: 768px;
   background-position: bottom right;
   background-position-y: 4rem;
   background-image: url("/portfolio/yanina3.webp");
+  animation: animatedBackground 2s linear alternate;
 }
 
 @media (max-width: 1400px) {
