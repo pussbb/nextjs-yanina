@@ -11,7 +11,7 @@ import HealthyFeetIntroShort from "@/app/Sections/HealthyFeet/HealthyFeetIntroSh
 export default function Home() {
 
   return (
-      <main className="main-page flex min-h-screen flex-col justify-between p-1">
+      <main className="main-page flex min-h-screen flex-col justify-between p-">
           <YaninaPortfolio/>
 
           <HealthyFeetIntroShort />

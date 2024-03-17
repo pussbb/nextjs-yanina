@@ -28,23 +28,65 @@ li .check-mark {
 }
 
 .collage {
-  background-size: 10vw;
-  background-image: url("/portfolio/Untitled.png"), url("/portfolio/Untitled2.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position:
-          bottom left,
-          top right;
+  background-repeat: no-repeat;
+  background-size: 768px;
+  background-position: bottom right;
+  background-position-y: 4rem;
+  background-image: url("/portfolio/yanina3.webp");
+}
+
+@media (max-width: 1400px) {
+  .collage {
+    background-size: 668px;
+    background-position-y: 8rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .collage {
+    background-size: 568px;
+    background-position-y: 8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .collage {
+    background-size: 468px;
+    background-position-y: 8rem;
+  }
+}
+@media (max-width: 500px) {
+  .collage .col-4 {
+    max-width: inherit !important;
+  }
+}
+@media (max-width: 1000px) {
+  .collage .col-4 {
+    max-width: 20vw;
+  }
+  .collage {
+    background-size: 368px;
+    background-position-y: 8rem;
+  }
 }
 
 @media (max-width: 900px) {
+    .collage .col-4 {
+      max-width: inherit !important;
+    }
     .collage {
       background-image: none;
     }
 }
 
 .collage > .text-left {
-  color: white;
-  mix-blend-mode: difference;
+  height: inherit;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  filter: invert(1) grayscale(1) contrast(9);
 }
 
 img.profile {

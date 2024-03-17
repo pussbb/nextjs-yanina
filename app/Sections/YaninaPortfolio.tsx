@@ -37,7 +37,7 @@ export const YaninaPortfolio = () => {
     ]
 
     return (
-        <section className="section pb-[50px]" style={{position: "relative"}}>
+        <section className="section collage" style={{position: "relative", paddingBottom: '90px'}}>
             <motion.div
                 className={'container text-center'}
                 variants={variants}
@@ -74,7 +74,7 @@ export const YaninaPortfolio = () => {
                                 }}
                                 whileInView="visible"
                                 drag
-                                dragConstraints={{left: 10, right: 10, top: 10, bottom: 10}}
+                                dragConstraints={{left: 5, right: 10, top: 10, bottom: 10}}
                                 dragElastic={0.1}
                                 whileHover={{scale: 1.5}}
                                 whileTap={{scale: 0.9}}
@@ -167,11 +167,10 @@ export const YaninaPortfolio = () => {
                             }}/>
 
                     </div>
-                    <div className={'col-8 collage'}>
+                    <div className={'col-8'} style={{ color: 'rgb(34 34 34 / var(--tw-text-opacity))' ,   filter: 'grayscale(1)' }}>
                         <br/>
                         <br/>
                         <AnimatedText text={texts} className={'text-left text-base'}/>
-
                     </div>
                 </div>
 
