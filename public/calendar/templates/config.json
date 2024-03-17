@@ -1,0 +1,13 @@
+{
+  "templates": [
+    {
+      "name": "default",
+      "file": "template1.svg",
+      "description": "Default template",
+      "replaceFormat": {
+        "search": "D{ID}</tspan>",
+        "replace": "</tspan>"
+      }
+    }
+  ]
+}

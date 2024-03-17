@@ -27,6 +27,133 @@ li .check-mark {
   position: relative;
 }
 
+@keyframes animatedBackground {
+  from {
+    opacity: 0.05;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.collage {
+  background-repeat: no-repeat;
+  background-size: 768px;
+  background-position: bottom right;
+  background-position-y: 4rem;
+  background-image: url("/portfolio/yanina3.webp");
+  animation: animatedBackground 2s linear alternate;
+}
+
+@media (max-width: 1400px) {
+  .collage {
+    background-size: 668px;
+    background-position-y: 8rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .collage {
+    background-size: 568px;
+    background-position-y: 8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .collage {
+    background-size: 468px;
+    background-position-y: 8rem;
+  }
+}
+@media (max-width: 500px) {
+  .collage .col-4 {
+    max-width: inherit !important;
+  }
+}
+@media (max-width: 1000px) {
+  .collage .col-4 {
+    max-width: 20vw;
+  }
+  .collage {
+    background-size: 368px;
+    background-position-y: 8rem;
+  }
+}
+
+@media (max-width: 900px) {
+    .collage .col-4 {
+      max-width: inherit !important;
+    }
+    .collage {
+      background-image: none;
+    }
+}
+
+.collage > .text-left {
+  height: inherit;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  filter: invert(1) grayscale(1) contrast(9);
+}
+
+img.profile {
+  min-width: 5vw;
+  min-height: 4vh;
+  max-width: 30vw;
+  max-height: 40vh;
+  position: relative;
+  float: left;
+  margin-top: 20px;
+  @apply ring-1 p-1 rounded-full;
+  --tw-ring-color: #FF1493;
+}
+@media (min-width:900px) {
+  img.profile {
+    max-width: 40vw;
+    min-width: 10vw;
+    min-height: 8vh;
+  }
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #FF1493;
+  transform-origin: 0%;
+  width: 100%;
+  z-index: 999999999999999;
+}
+
+.social-list {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  @apply p-0;
+}
+
+img.profile:hover {
+  @apply ring-2;
+}
+
+img.social {
+  width: 40px;
+  height: 40px;
+  @media (max-width:1200px) {
+    width: 28px;
+    height: 28px;
+  }
+  //float: left;
+}
+
 
 @media (max-width:900px) {
   h1, .h1 {

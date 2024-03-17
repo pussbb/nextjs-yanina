@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import {useEffect, useRef, useState} from 'react';
 import useWindowSize from '@/hooks/useWindowSize';
 
 const Header = () => {
@@ -14,8 +14,23 @@ const Header = () => {
 
     const { width } = useWindowSize();
 
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event: Event) => {
+            // @ts-expect-error
+            if (ref.current && !ref.current?.contains(event.target)) {
+                setNavOpen(false);
+            }
+        };
+        document.addEventListener('click', handleClickOutside, true);
+        return () => {
+            document.removeEventListener('click', handleClickOutside, true);
+        };
+    }, [ ref ]);
+
     return (
-        <header className="header fixed top-0 w-full shadow-md z-50	bg-theme-light">
+        <header ref={ref} className="header fixed top-0 w-full shadow-md z-50	bg-theme-light">
             <nav className="navbar container">
                 {/* logo */}
                 <div className="order-0">
@@ -63,6 +78,7 @@ const Header = () => {
                                 className={`nav-link block py-1 ${
                                     pathname === '/' ? "nav-link-active" : ""
                                 }`}
+                                onClick={() => setNavOpen(false)}
                             >
                                 Головна
                             </Link>
@@ -70,6 +86,7 @@ const Header = () => {
                         <li className="nav-item">
                             <Link
                                 href={'/online/demo'}
+                                onClick={() => setNavOpen(false)}
                                 className={`nav-link block py-1 ${
                                     pathname === '/online/demo' ? "nav-link-active" : ""
                                 }`}
@@ -83,7 +100,7 @@ const Header = () => {
                 <div
                     className="d-flex order-1 ml-auto hidden min-w-[200px] items-center justify-end md:ml-0 md:flex md:order-2">
                     <Link className="btn btn-primary z-0 py-[14px]" href={'/order'} rel="">
-                        Замовити
+                        Замовити курс
                     </Link>
                 </div>
             </nav>
