@@ -74,6 +74,7 @@ const generateDefaultMetadata = (title: string = defaultTitle): Metadata => ({
         'Гіперлордоз',
         'Кіфоз',
         'Неправильна хода',
+        'неправильна хода у дітей',
         'Сутулість',
         'Слабкий м\'язовий корсет'
     ],
