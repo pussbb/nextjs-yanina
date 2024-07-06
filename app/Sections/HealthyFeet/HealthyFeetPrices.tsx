@@ -23,7 +23,7 @@ const plans = [
             orLabel: 'або скористайтесь посиланням',
         },
         button: {
-            label: 'Замовити',
+            label: 'Перейти до оплати',
             link: 'https://secure.wayforpay.com/button/bca897674b495'
         }
     },
@@ -83,7 +83,7 @@ const HealthyFeetPrices = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                {
+                                {/*
                                     plan.qr && (
                                         <div className="mt-5 mr-auto ml-auto" style={{}}>
                                             {plan.qr.label}
@@ -91,7 +91,7 @@ const HealthyFeetPrices = () => {
                                             {plan.qr.orLabel}
                                         </div>
                                     )
-                                }
+                                */}
                                 <Link
                                     className={`btn mt-5 ${
                                         plan.recommended ? "btn-primary" : "btn-outline-primary"
