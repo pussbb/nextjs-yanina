@@ -110,6 +110,15 @@ img.profile {
   @apply ring-1 p-1 rounded-full;
   --tw-ring-color: #FF1493;
 }
+
+.loadingImage {
+  background: transparent url('/loading.svg') no-repeat center center;
+}
+.broder {
+  border: 1px solid #FF1493;
+  border-radius: 5%;
+}
+
 @media (min-width:900px) {
   img.profile {
     max-width: 40vw;

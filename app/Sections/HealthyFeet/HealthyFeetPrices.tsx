@@ -87,7 +87,7 @@ const HealthyFeetPrices = () => {
                                     plan.qr && (
                                         <div className="mt-5 mr-auto ml-auto" style={{}}>
                                             {plan.qr.label}
-                                            <img src={plan.qr.link} alt="qr" className="mt-1 mr-auto ml-auto"/>
+                                            <img alt={'qr code'} src={plan.qr.link} width={180} height={180} className="mt-1 broder loadingImage mr-auto ml-auto"/>
                                             {plan.qr.orLabel}
                                         </div>
                                     )
