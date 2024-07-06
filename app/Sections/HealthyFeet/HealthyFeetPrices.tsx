@@ -17,9 +17,14 @@ const plans = [
             'закритий прямий ефір з лікарем-ортопедом',
             'рекомендації стосовно вашого діагнозу',
         ],
+        qr: {
+            label: 'Проскануйте QR-код чтоб замовити',
+            link: 'https://wayforpay.com/qr/img?token=bca897674b495&type=b&size=160',
+            orLabel: 'або скористайтесь посиланням',
+        },
         button: {
             label: 'Замовити',
-            link: '/buy'
+            link: 'https://secure.wayforpay.com/button/bca897674b495'
         }
     },
     {
@@ -78,6 +83,15 @@ const HealthyFeetPrices = () => {
                                         </li>
                                     ))}
                                 </ul>
+                                {
+                                    plan.qr && (
+                                        <div className="mt-5 mr-auto ml-auto" style={{}}>
+                                            {plan.qr.label}
+                                            <img src={plan.qr.link} alt="qr" className="mt-1 mr-auto ml-auto"/>
+                                            {plan.qr.orLabel}
+                                        </div>
+                                    )
+                                }
                                 <Link
                                     className={`btn mt-5 ${
                                         plan.recommended ? "btn-primary" : "btn-outline-primary"
