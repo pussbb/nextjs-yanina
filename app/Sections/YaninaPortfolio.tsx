@@ -138,7 +138,8 @@ export const YaninaPortfolio = () => {
                                         duration: 0.5,
                                         staggerChildren: 0.1,
                                     },
-                                    translateY: 20,
+                                    translateY: 5,
+                                    translateX: 10,
                                 }}
                                 whileHover={{scale: 1.5}}
                                 whileTap={{scale: 0.9}}
@@ -149,6 +150,33 @@ export const YaninaPortfolio = () => {
                                 <motion.img variants={variants} className={'social'} loading={'lazy'} alt={'tiktok'}
                                             src={'/social/tiktok.svg'}/>
                             </motion.a>
+
+                            <motion.a
+                                initial={{opacity: 0, scale: 0.5}}
+                                animate={{
+                                    y: 0,
+                                    opacity: 1,
+                                    scale: 1,
+                                    transition: {
+                                        duration: 0.5,
+                                        staggerChildren: 0.1,
+                                    },
+                                    translateY: 25,
+                                    translateX: 0,
+                                }}
+                                whileHover={{scale: 1.5}}
+                                whileTap={{scale: 0.9}}
+                                target="_blank"
+                                onClick={(e) => {
+                                    e.preventDefault()
+                                    window.open( "mailto:" + atob('eWFuaW5hcG9wZXNrb0BnbWFpbC5jb20='), '_blank', "noopener")?.focus();
+                                }}
+                                rel="noopener noreferrer nofollow"
+                            >
+                                <motion.img variants={variants} className={'social'} loading={'lazy'} alt={'tiktok'}
+                                            src={'/social/email.svg'}/>
+                            </motion.a>
+
                         </motion.div>
 
                         <motion.img
@@ -167,7 +195,8 @@ export const YaninaPortfolio = () => {
                             }}/>
 
                     </div>
-                    <div className={'col-8'} style={{ color: 'rgb(34 34 34 / var(--tw-text-opacity))' ,   filter: 'grayscale(1)' }}>
+                    <div className={'col-8'}
+                         style={{color: 'rgb(34 34 34 / var(--tw-text-opacity))', filter: 'grayscale(1)'}}>
                         <br/>
                         <br/>
                         <AnimatedText text={texts} className={'text-left text-base'}/>

@@ -1,3 +1,4 @@
+"use client"
 import {
     IoCall,
     IoGlobeOutline,
@@ -30,6 +31,7 @@ import {
     IoMail,
 } from "react-icons/io5";
 import { FaTelegram } from 'react-icons/fa';
+
 import React from 'react';
 
 const socialIcons = {
@@ -294,7 +296,10 @@ const socialIcons = {
         </a>
     </li>,
     'email': (email: string) => <li key={'email'}  className="inline-block">
-        <a aria-label="email" href={`mailto:${email}`}>
+        <a aria-label="email" href={`mailto:${email}`} onClick={(e) => {
+            e.preventDefault()
+            window.open( "mailto:" + atob(email), '_blank', "noopener")?.focus();
+        }}>
             <IoMail/>
         </a>
     </li>,
