@@ -14,12 +14,12 @@ const Page = () => {
                     <br/>
                     <Link className="cta-link inline-flex items-center text-primary raspberry-color"
                           href={"/ДОГОВІР_ПУБЛІЧНОЇ_ОФЕРТИ_ПРО_НАДАННЯ_ІНФОРМАЦІЙНИХ_ПОСЛУГ.docx"}>
-                        Загрузити документ "Договір публічної оферти"
+                        Загрузити документ &quot;Договір публічної оферти&quot;
                     </Link>
                     <br/>
                     <Link className="cta-link inline-flex items-center text-primary raspberry-color"
                           href={"/Правила повернення грошових коштів.docx"}>
-                        Загрузити документ "Правила повернення грошових коштів"
+                        Загрузити документ &quot;Правила повернення грошових коштів&quot;
                     </Link>
                 </div>
             </section>
