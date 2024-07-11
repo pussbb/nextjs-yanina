@@ -105,7 +105,7 @@ const HealthyFeetPrices = () => {
                                     <Link className="cta-link inline-flex items-center text-primary raspberry-color" href={'/offerta'} >
                                         Оферти
                                     </Link>.
-                                    Також Ви можете ознайомитися з
+                                    Також Ви можете ознайомитися з &nbsp;
                                     <Link className="cta-link inline-flex items-center text-primary raspberry-color" href={'/refund'} >
                                         Правила повернення грошей
                                     </Link>

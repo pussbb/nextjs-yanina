@@ -12,7 +12,7 @@ const Page = () => {
                 <div className="container">
                     <RefundRules/>
                     <Link className="cta-link inline-flex items-center text-primary raspberry-color" href={"/Правила повернення грошових коштів.docx"}>
-                       Правила повернення грошових коштів
+                       Загрузити документ
                     </Link>
                 </div>
             </section>

@@ -1,6 +1,9 @@
-
+"use client"
 
 const RefundRules = () => {
+
+    /// eWFuaW5hcG9wZXNrb0BnbWFpbC5jb20=
+
     return (
         <section className={`section-refund`}>
             <div className="container">
@@ -17,9 +20,11 @@ const RefundRules = () => {
                         Є виключення випадку неможливості клієнтом скористуватися електронним продуктом через
                         непередбачені ситуації щодо стану здоров’я та ін. можливе переглядання повернення коштів/перенесення
                         дати надання послуг зі сторони постачальника на власний розсуд.<br/>
-
+                        yaninapopesko@gmail.com
                         Якщо ви хочете повернути/переглянути дати проведення електронного продукту, надішліть на електронну
-                        пошту лист з наступними даними:<br/>
+                        пошту(<a href="#" className={'cta-link inline-flex items-center text-primary raspberry-color'} onClick={() => {
+                            window.open( "mailto:" + atob("eWFuaW5hcG9wZXNrb0BnbWFpbC5jb20="), '_blank', "noopener")?.focus();
+                        }}>Email</a>) лист з наступними даними:<br/>
                         • Дата та час придбання<br/>
                         • Електронну версію документу, що підтверджує сплату вами повної вартості товару (квитанція з банку по цій транзакції).
                     </p>
