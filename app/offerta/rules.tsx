@@ -159,12 +159,12 @@ const Rules = () => {
         9.12. Оферта діє до повного виконання Сторонами своїх зобов'язань.<br/>
         9.13. Офіційним джерелом інформування Замовника про Виконавця та послуги є:<br/>
 
-        • Telegram-канал Виконавця: <a href={'https://t.me/yaninapopesko'}>Yanina Popesko Telegram</a><br/>
+        • Telegram-канал Виконавця: <a className={'cta-link inline-flex items-center text-primary raspberry-color'} href={'https://t.me/yaninapopesko'}>Yanina Popesko Telegram</a><br/>
         • <a href="#" className={'cta-link inline-flex items-center text-primary raspberry-color'} onClick={() => {
         window.open("mailto:" + atob("eWFuaW5hcG9wZXNrb0BnbWFpbC5jb20="), '_blank', "noopener")?.focus();
     }}>Пошта Яніни Попеско</a><br/>
 
-        • Instagram-аккаунт Виконавця: <a href={'https://www.instagram.com/yanina_popesko/'}>Yanina Popesko
+        • Instagram-аккаунт Виконавця: <a className={'cta-link inline-flex items-center text-primary raspberry-color'} href={'https://www.instagram.com/yanina_popesko/'}>Yanina Popesko
         Instagram</a>
 
     </div>)
