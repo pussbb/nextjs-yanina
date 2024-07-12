@@ -160,7 +160,8 @@ const Rules = () => {
         9.13. Офіційним джерелом інформування Замовника про Виконавця та послуги є:<br/>
 
         • Telegram-канал Виконавця: <a className={'cta-link inline-flex items-center text-primary raspberry-color'} href={'https://t.me/yaninapopesko'}>Yanina Popesko Telegram</a><br/>
-        • <a href="#" className={'cta-link inline-flex items-center text-primary raspberry-color'} onClick={() => {
+        • <a href="#" className={'cta-link inline-flex items-center text-primary raspberry-color'} onClick={(e) => {
+            e.preventDefault()
         window.location.href = "mailto:" + atob("eWFuaW5hcG9wZXNrb0BnbWFpbC5jb20=") /// window.open("mailto:" + atob("eWFuaW5hcG9wZXNrb0BnbWFpbC5jb20="), '_blank', "noopener")?.focus();
     }}>Пошта Яніни Попеско</a><br/>
 

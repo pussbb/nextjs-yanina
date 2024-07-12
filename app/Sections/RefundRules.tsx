@@ -21,7 +21,8 @@ const RefundRules = () => {
                         непередбачені ситуації щодо стану здоров’я та ін. можливе переглядання повернення коштів/перенесення
                         дати надання послуг зі сторони постачальника на власний розсуд.<br/>
                         Якщо ви хочете повернути/переглянути дати проведення електронного продукту, надішліть на електронну
-                        пошту(<a href="#" className={'cta-link inline-flex items-center text-primary raspberry-color'} onClick={() => {
+                        пошту(<a href="#" className={'cta-link inline-flex items-center text-primary raspberry-color'} onClick={(e) => {
+                        e.preventDefault()
                           //  window.open( "mailto:" + atob("eWFuaW5hcG9wZXNrb0BnbWFpbC5jb20="), '_blank', "noopener")?.focus();
                         window.location.href = "mailto:" + atob("eWFuaW5hcG9wZXNrb0BnbWFpbC5jb20=")
                         }}>Email</a>) лист з наступними даними:<br/>
