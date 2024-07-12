@@ -161,7 +161,7 @@ const Rules = () => {
 
         • Telegram-канал Виконавця: <a className={'cta-link inline-flex items-center text-primary raspberry-color'} href={'https://t.me/yaninapopesko'}>Yanina Popesko Telegram</a><br/>
         • <a href="#" className={'cta-link inline-flex items-center text-primary raspberry-color'} onClick={() => {
-        window.open("mailto:" + atob("eWFuaW5hcG9wZXNrb0BnbWFpbC5jb20="), '_blank', "noopener")?.focus();
+        window.location.href = "mailto:" + atob("eWFuaW5hcG9wZXNrb0BnbWFpbC5jb20=") /// window.open("mailto:" + atob("eWFuaW5hcG9wZXNrb0BnbWFpbC5jb20="), '_blank', "noopener")?.focus();
     }}>Пошта Яніни Попеско</a><br/>
 
         • Instagram-аккаунт Виконавця: <a className={'cta-link inline-flex items-center text-primary raspberry-color'} href={'https://www.instagram.com/yanina_popesko/'}>Yanina Popesko
