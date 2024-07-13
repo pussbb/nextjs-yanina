@@ -100,7 +100,8 @@ const HealthyFeetPrices = () => {
                                 >
                                     {plan.button.label}
                                 </Link>
-                                <p className={'text-sm'} style={{ fontSize: '0.6rem' }}>
+                                {/*
+                                 <p className={'text-sm'} style={{ fontSize: '0.6rem' }}>
                                     Замовляючи товар Ви погоджуетесь з умовами &nbsp;
                                     <Link className="cta-link inline-flex items-center text-primary raspberry-color" href={'/offerta'} >
                                         Оферти
@@ -110,7 +111,7 @@ const HealthyFeetPrices = () => {
                                         Правила повернення грошей
                                     </Link>
                                 </p>
-
+*/}
                             </div>
                         </div>
                     ))}
