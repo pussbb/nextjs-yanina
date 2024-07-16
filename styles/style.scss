@@ -42,7 +42,7 @@ li .check-mark {
   background-position: bottom right;
   background-position-y: 4rem;
   background-image: url("/portfolio/yanina3.webp");
-  animation: animatedBackground 2s linear alternate;
+  animation: animatedBackground 4s linear alternate;
 }
 
 @media (max-width: 1400px) {
@@ -63,6 +63,12 @@ li .check-mark {
   .collage {
     background-size: 468px;
     background-position-y: 8rem;
+  }
+}
+@media (max-width: 1300px) {
+  .collage {
+    background-size: 468px;
+    background-position-y: 15rem;
   }
 }
 @media (max-width: 500px) {

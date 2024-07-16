@@ -72,6 +72,7 @@ export const YaninaPortfolio = () => {
                                     opacity: 1,
                                     scale: 1,
                                     transition: {
+                                        delay: 0.5,
                                         duration: 0.1,
                                         staggerChildren: 0.1,
                                     },
@@ -97,6 +98,7 @@ export const YaninaPortfolio = () => {
                                     opacity: 1,
                                     scale: 1,
                                     transition: {
+                                        delay: 0.5,
                                         duration: 0.1,
                                         staggerChildren: 0.1,
                                     },
@@ -118,6 +120,7 @@ export const YaninaPortfolio = () => {
                                     opacity: 1,
                                     scale: 1,
                                     transition: {
+                                        delay: 0.5,
                                         duration: 0.1,
                                         staggerChildren: 0.1,
                                     },
@@ -140,6 +143,7 @@ export const YaninaPortfolio = () => {
                                     opacity: 1,
                                     scale: 1,
                                     transition: {
+                                        delay: 0.5,
                                         duration: 0.1,
                                         staggerChildren: 0.1,
                                     },
@@ -173,6 +177,7 @@ export const YaninaPortfolio = () => {
                                 type: "smooth",
                                 repeatType: "mirror",
                                 duration: 0.1,
+                                delay: 0.5
                                 //repeat: Infinity,
                             }}/>
 
