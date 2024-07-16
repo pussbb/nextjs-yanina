@@ -9,7 +9,7 @@ export const sentenceVariants = {
 
 export const letterVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { opacity: { duration: 0.4 } } }
+    visible: { opacity: 1, transition: { opacity: { delay: 1, duration: 0.4 } } }
 };
 
 // @ts-expect-error

@@ -163,6 +163,13 @@ img.social {
   //float: left;
 }
 
+.raspberry-color {
+  color: #FF1493;
+}
+
+.introList {
+  margin-top: 20px;
+}
 
 @media (max-width:900px) {
   h1, .h1 {
@@ -171,16 +178,22 @@ img.social {
   h3 {
     font-size: 1.05rem;
   }
+  .introList {
+    margin-top: 10px;
+  }
+  .social-list {
+    margin-top: 10px;
+  }
+  .mobileSmallFont {
+    font-size: 0.75rem;
+  }
+
   h2.specialh2 {
     font-size: 1.45rem;
     @apply text-h2-sm md:text-h2;
   }
   .section .container {
     margin: 0 auto !important;
-  }
-
-  .raspberry-color {
-    color: #FF1493;
   }
 
   h5 {

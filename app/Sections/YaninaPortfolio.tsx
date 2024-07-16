@@ -4,7 +4,6 @@ import {useRect} from "@/app/hooks/useRect";
 import {motion} from 'framer-motion';
 import {TypeWriter} from "@/app/components/TypeWritter";
 import {AnimatedText} from "@/app/components/AnimatedText";
-import HealthyFeetIntroShort from "@/app/Sections/HealthyFeet/HealthyFeetIntroShort";
 
 const variants = {
     initial: {
@@ -31,9 +30,15 @@ export const YaninaPortfolio = () => {
     let contentRect = useRect(imageRef)
 
     const texts = [
-        ' - Тренер-реабілітолог',
-        ' - Засновниця клубу з художньої гімнастики ',
-        ' - Авторка онлайн курсу «Здорова стопа»'
+       // ' - Тренер-реабілітолог',
+       // ' - Засновниця клубу з художньої гімнастики ',
+       // ' - Авторка онлайн курсу «Здорова стопа»'
+        ' - Як виправити плоскостопість у дитини.',
+        ' - Як допомогти дитині позбутися вальгусної деформації.',
+        ' - Як зміцнити стопи вашої дитини.',
+        ' - Як попередити майбутні проблеми з ходьбою вашої дитини.',
+        ' - Як забезпечити здорове майбутнє вашій дитині.'
+
     ]
 
     return (
@@ -45,7 +50,7 @@ export const YaninaPortfolio = () => {
                 whileInView="animate"
             >
                 <h3><TypeWriter text={'Яніна Попеско'}/></h3>
-                <h6><TypeWriter text={'Yanina Popesko'}/></h6>
+                <h6><TypeWriter text={'досвідченний тренер-реабілітолог'}/></h6>
                 <div className="row">
                     <div className={'col-4'}>
                         <motion.div
@@ -67,7 +72,7 @@ export const YaninaPortfolio = () => {
                                     opacity: 1,
                                     scale: 1,
                                     transition: {
-                                        duration: 0.5,
+                                        duration: 0.1,
                                         staggerChildren: 0.1,
                                     },
                                     translateY: 20,
@@ -92,7 +97,7 @@ export const YaninaPortfolio = () => {
                                     opacity: 1,
                                     scale: 1,
                                     transition: {
-                                        duration: 0.5,
+                                        duration: 0.1,
                                         staggerChildren: 0.1,
                                     },
                                     translateY: -3,
@@ -113,7 +118,7 @@ export const YaninaPortfolio = () => {
                                     opacity: 1,
                                     scale: 1,
                                     transition: {
-                                        duration: 0.5,
+                                        duration: 0.1,
                                         staggerChildren: 0.1,
                                     },
                                     translateY: -2,
@@ -135,34 +140,11 @@ export const YaninaPortfolio = () => {
                                     opacity: 1,
                                     scale: 1,
                                     transition: {
-                                        duration: 0.5,
-                                        staggerChildren: 0.1,
-                                    },
-                                    translateY: 5,
-                                    translateX: 10,
-                                }}
-                                whileHover={{scale: 1.5}}
-                                whileTap={{scale: 0.9}}
-                                href={'https://www.tiktok.com/@yaninapopesko'}
-                                target="_blank"
-                                rel="noopener noreferrer nofollow"
-                            >
-                                <motion.img variants={variants} className={'social'} loading={'lazy'} alt={'tiktok'}
-                                            src={'/social/tiktok.svg'}/>
-                            </motion.a>
-
-                            <motion.a
-                                initial={{opacity: 0, scale: 0.5}}
-                                animate={{
-                                    y: 0,
-                                    opacity: 1,
-                                    scale: 1,
-                                    transition: {
-                                        duration: 0.5,
+                                        duration: 0.1,
                                         staggerChildren: 0.1,
                                     },
                                     translateY: 25,
-                                    translateX: 0,
+                                    translateX: 5,
                                 }}
                                 whileHover={{scale: 1.5}}
                                 whileTap={{scale: 0.9}}
@@ -190,16 +172,17 @@ export const YaninaPortfolio = () => {
                             transition={{
                                 type: "smooth",
                                 repeatType: "mirror",
-                                duration: 2,
+                                duration: 0.1,
                                 //repeat: Infinity,
                             }}/>
 
                     </div>
-                    <div className={'col-8'}
+                    <div className={'col-8 mobileSmallFont introList'}
                          style={{color: 'rgb(34 34 34 / var(--tw-text-opacity))', filter: 'grayscale(1)'}}>
-                        <br/>
-                        <br/>
                         <AnimatedText text={texts} className={'text-left text-base'}/>
+                        <ul style={{ display:'none' }}>{
+                            texts.map((i) => <li key={i}>{i}</li>)
+                        }</ul>
                     </div>
                 </div>
 
