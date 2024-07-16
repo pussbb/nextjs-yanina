@@ -15,13 +15,15 @@ const Page = () => {
                 <div className="container">
                     <div className="items-center">
                         <br/>
-                        <Rules />
+                        <Rules/>
+                        <br/><br/>
                         <Link className="cta-link inline-flex items-center text-primary raspberry-color"
                               href={"/ДОГОВІР_ПУБЛІЧНОЇ_ОФЕРТИ_ПРО_НАДАННЯ_ІНФОРМАЦІЙНИХ_ПОСЛУГ.docx"}>
                             Загрузити документ &quot;Договір публічної оферти&quot;
                         </Link>
                         <br/>
                     </div>
+                    <br/><br/><br/>
                     <div className="items-center">
                         <RefundRules/>
                         <Link className="cta-link inline-flex items-center text-primary raspberry-color"

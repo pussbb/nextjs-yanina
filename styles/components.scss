@@ -8,6 +8,14 @@
   @apply mx-auto px-4 max-w-[95vw];
   // max-w-[70vw]
 }
+@media (min-width: 1200px) {
+  .container {
+    @apply mx-auto px-4 max-w-[65vw];
+  }
+  .container.wide {
+    @apply mx-auto px-4 max-w-[95vw];
+  }
+}
 
 // form style
 .form-inputs * {

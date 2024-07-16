@@ -39,7 +39,7 @@ export const YaninaPortfolio = () => {
     return (
         <section className="section collage" style={{position: "relative", paddingBottom: '90px'}}>
             <motion.div
-                className={'container text-center'}
+                className={'container wide text-center'}
                 variants={variants}
                 initial="initial"
                 whileInView="animate"
