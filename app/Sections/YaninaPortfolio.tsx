@@ -177,7 +177,8 @@ export const YaninaPortfolio = () => {
                                 type: "smooth",
                                 repeatType: "mirror",
                                 duration: 0.1,
-                                delay: 0.5
+                                delay: 0.5,
+                                staggerChildren: 0.1,
                                 //repeat: Infinity,
                             }}/>
 
