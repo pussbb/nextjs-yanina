@@ -83,17 +83,21 @@ const Header = () => {
                                 Головна
                             </Link>
                         </li>
-                        <li className="nav-item">
-                            <Link
-                                href={'/online/demo'}
-                                onClick={() => setNavOpen(false)}
-                                className={`nav-link block py-1 ${
-                                    pathname === '/online/demo' ? "nav-link-active" : ""
-                                }`}
-                            >
-                                Консультація
-                            </Link>
-                        </li>
+                        {
+                            /*
+                            <li className="nav-item">
+                                <Link
+                                    href={'/online/demo'}
+                                    onClick={() => setNavOpen(false)}
+                                    className={`nav-link block py-1 ${
+                                        pathname === '/online/demo' ? "nav-link-active" : ""
+                                    }`}
+                                >
+                                    Консультація
+                                </Link>
+                            </li>
+                            */
+                        }
                     </ul>
 
                 </div>

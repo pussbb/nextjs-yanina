@@ -1,7 +1,6 @@
 import YaninaInfoSection from '@/app/Sections/YaninaInfoSection';
 import HealthyFeetPrices from '@/app/Sections/HealthyFeet/HealthyFeetPrices';
 import HealthyFeetInfo from '@/app/Sections/HealthyFeet/HealthyFeetInfo';
-import RegisterForTheCourse from "@/app/Sections/RegisterForTheCourse";
 import YaninaPortfolio from "@/app/Sections/YaninaPortfolio";
 import HealthFeetFeatures from "@/app/Sections/HealthyFeet/HealthFeetFeatures";
 import HealthyFeetForYou from "@/app/Sections/HealthyFeet/HealthyFeetForYou";
@@ -21,9 +20,6 @@ export default function Home() {
           <YaninaInfoSection/>
           <HealthyFeetPrices/>
           <HealthyFeetInfo/>
-
-          <RegisterForTheCourse/>
-
       </main>
   )
 }
