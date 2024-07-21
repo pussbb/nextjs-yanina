@@ -91,7 +91,7 @@ const HealthyFeetPrices = () => {
                             <div className="card text-center">
                                 <h4>{plan.title}</h4>
                                 <div className="mt-5">
-                                    <span className="text-5xl text-dark">₴ {plan.price}</span>
+                                    <span className="text-5xl text-dark">₴ {plan.price} грн.</span>
                                     <span>/</span>
                                     <span className={'spanPlanType'}>{plan.type}</span>
                                 </div>
