@@ -23,7 +23,7 @@ const plans = [
         },
         button: {
             label: 'Перейти до оплати',
-            link: 'https://secure.wayforpay.com/button/bca897674b495'
+            link: 'http://secure.wayforpay.com/payment/s9d53ad1bf3fc'
         }
     },
     {
@@ -46,7 +46,7 @@ const plans = [
         ],
         button: {
             label: 'Перейти до оплати',
-            link: 'https://secure.wayforpay.com/button/bb9e25af4dee4'
+            link: 'http://secure.wayforpay.com/payment/s24e75c295793'
         }
     },
     {
@@ -70,7 +70,7 @@ const plans = [
         ],
         button: {
             label: 'Перейти до оплати',
-            link: 'https://secure.wayforpay.com/button/bebb0424d4479'
+            link: 'http://secure.wayforpay.com/payment/sd97f9624cd42'
         }
     }
 ]
