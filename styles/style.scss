@@ -65,6 +65,7 @@ li .check-mark {
     background-position-y: 8rem;
   }
 }
+
 @media (max-width: 1300px) {
   .collage {
     background-size: 468px;
@@ -120,9 +121,14 @@ img.profile {
 .loadingImage {
   background: transparent url('/loading.svg') no-repeat center center;
 }
+
 .broder {
   border: 1px solid #FF1493;
   border-radius: 5%;
+}
+
+font-small {
+  font-size: 0.45rem;
 }
 
 @media (min-width:900px) {

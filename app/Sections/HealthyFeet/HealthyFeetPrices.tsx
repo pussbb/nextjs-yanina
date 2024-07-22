@@ -5,7 +5,7 @@ const plans = [
     {
         title: 'Basic (40 місць)',
         subtitle: '',
-        price:(<><small><s>2000</s></small> 1499</>),
+        price:(<><small><s>(2000)</s></small> <span className={'raspberry-color'}>1499</span></>),
         type: '5 тижнів',
         recommended: false,
         features: [
@@ -30,9 +30,9 @@ const plans = [
         title: 'Gold (15 місць)',
         subtitle: '',
         //price: 2499,
-        price:(<><small><s>3000</s></small> 2499</>),
-        type: '5 тижнів',
-        recommended: false,
+        price:(<><small><s>(3000)</s></small> <span className={'raspberry-color'}>2499</span></>),
+            type: '5 тижнів',
+            recommended: false,
         features: [
             '8 комплексів тренувань',
             'чат підтримки',
@@ -52,7 +52,7 @@ const plans = [
     {
         title: 'Platinum',
         subtitle: '(2 місця) діти від 7 років',
-        price: 8000,
+        price: (<span className={'raspberry-color'}>8000</span>),
         type: '5 тижнів',
         recommended: false,
         features: [
@@ -91,7 +91,7 @@ const HealthyFeetPrices = () => {
                             <div className="card text-center">
                                 <h4>{plan.title}</h4>
                                 <div className="mt-5">
-                                    <span className="text-5xl text-dark">₴ {plan.price} грн.</span>
+                                    <span className="text-2xl">{plan.price} </span><small>грн</small>
                                     <span>/</span>
                                     <span className={'spanPlanType'}>{plan.type}</span>
                                 </div>
