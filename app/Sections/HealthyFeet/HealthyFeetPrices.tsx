@@ -3,8 +3,8 @@ import GreenCheck from '@/app/components/GreenCheck';
 
 const plans = [
     {
-        title: 'Basic (40 місць)',
-        subtitle: '',
+        title: 'Basic',
+        subtitle: '(40 місць)',
         price:(<><small><s>(2000)</s></small> <span className={'raspberry-color'}>1499</span></>),
         type: '5 тижнів',
         recommended: false,
@@ -27,8 +27,8 @@ const plans = [
         }
     },
     {
-        title: 'Gold (15 місць)',
-        subtitle: '',
+        title: 'Gold',
+        subtitle: '(15 місць)',
         //price: 2499,
         price:(<><small><s>(3000)</s></small> <span className={'raspberry-color'}>2499</span></>),
             type: '5 тижнів',
